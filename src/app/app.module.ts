@@ -15,11 +15,17 @@ import { MainNavComponent } from './main-nav/main-nav.component';
 import { DeclarationComponent } from './declaration/declaration.component';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { NotFoundComponent } from './shared/not-found/not-found.component';
+import { ConclusionWorkComponent } from './conclusion/conclusion-work/conclusion-work.component';
+import { ConclusionGeneralComponent } from './conclusion/conclusion-general/conclusion-general.component';
+import { ConclusionPrintingFormComponent } from './conclusion/conclusion-printing-form/conclusion-printing-form.component';
 
 const appRoutes: Routes = [
   { path: '', component: DeclarationComponent},
   { path: 'documents', component: DocumentationComponent},
   { path: 'conclusion', component: ConclusionComponent},
+  { path: 'conclusion/conclusion-work', component: ConclusionWorkComponent},
+  { path: 'conclusion/conclusion-general', component: ConclusionGeneralComponent},
+  { path: 'conclusion/conclusion-printing-form', component: ConclusionPrintingFormComponent},
   { path: '**', component: NotFoundComponent }
 ];
 
@@ -32,7 +38,10 @@ const appRoutes: Routes = [
     MainNavComponent,
     DeclarationComponent,
     DocumentationComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ConclusionWorkComponent,
+    ConclusionGeneralComponent,
+    ConclusionPrintingFormComponent
   ],
   imports: [
     BrowserModule,

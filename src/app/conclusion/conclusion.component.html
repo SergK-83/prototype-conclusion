@@ -1,93 +1,10 @@
 <mat-card>
-  <mat-tab-group class="mat-tab-group-sub">
-    <mat-tab>
-      <ng-template mat-tab-label>
-        Моя работа
-      </ng-template>
+  <nav mat-tab-nav-bar class="sub-nav-tabs">
+    <a mat-tab-link *ngFor="let link of links"
+       [routerLink]="link.path"
+       (click)="activeLink = link"
+       [active]="activeLink == link"> {{link.name}} </a>
+  </nav>
 
-      <div>
-        <div class="row">
-          <div class="col-sm-9">
-            <mat-accordion multi="true">
-              <mat-expansion-panel>
-                <mat-expansion-panel-header>
-                  <mat-panel-title>
-                    1.5 Сведения о составе документов, предоставленных для проведения экспертизы
-                  </mat-panel-title>
-                </mat-expansion-panel-header>
-
-                <mat-form-field>
-                  <input matInput placeholder="First name">
-                </mat-form-field>
-
-                <mat-form-field>
-                  <input matInput placeholder="Age">
-                </mat-form-field>
-              </mat-expansion-panel>
-              <mat-expansion-panel>
-                <mat-expansion-panel-header>
-                  <mat-panel-title>
-                    3.5 Иные сведения
-                  </mat-panel-title>
-                </mat-expansion-panel-header>
-                <p>I'm visible because I am open</p>
-              </mat-expansion-panel>
-            </mat-accordion>
-          </div>
-          <div class="col-sm-3"></div>
-        </div>
-      </div>
-    </mat-tab>
-
-    <mat-tab>
-      <ng-template mat-tab-label>
-        Все разделы
-      </ng-template>
-
-      <div>
-        <div class="row">
-          <div class="col-sm-9">
-            <mat-accordion multi="true">
-              <mat-expansion-panel>
-                <mat-expansion-panel-header>
-                  <mat-panel-title>
-                    1.5 Сведения о составе документов, предоставленных для проведения экспертизы
-                  </mat-panel-title>
-                  <mat-panel-description>
-                    Type your name and age
-                  </mat-panel-description>
-                </mat-expansion-panel-header>
-
-                <mat-form-field>
-                  <input matInput placeholder="First name">
-                </mat-form-field>
-
-                <mat-form-field>
-                  <input matInput placeholder="Age">
-                </mat-form-field>
-              </mat-expansion-panel>
-              <mat-expansion-panel>
-                <mat-expansion-panel-header>
-                  <mat-panel-title>
-                    Self aware panel
-                  </mat-panel-title>
-                  <mat-panel-description>
-                    Currently I am
-                  </mat-panel-description>
-                </mat-expansion-panel-header>
-                <p>I'm visible because I am open</p>
-              </mat-expansion-panel>
-            </mat-accordion>
-          </div>
-          <div class="col-sm-3"></div>
-        </div>
-      </div>
-    </mat-tab>
-
-    <mat-tab>
-      <ng-template mat-tab-label>
-        Печатная форма
-      </ng-template>
-    </mat-tab>
-  </mat-tab-group>
+  <router-outlet></router-outlet>
 </mat-card>
