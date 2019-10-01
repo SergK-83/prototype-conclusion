@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(243, 243, 244);
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.container-maxwidth-1400, .maxwidth-1400px {
+  max-width: 1400px!important;
+}
+
+.main-header {
+  .mat-toolbar {
+    background-color: #143d66;
+    color: #fff;
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+  }
+}
+
+.page-title {
+  font-size: 17px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.main-nav {
+  .mat-tab-header {
+    margin-bottom: 20px;
+  }
+
+  > .mat-tab-group > .mat-tab-header {
+    margin-bottom: 30px;
+  }
+
+  > .mat-tab-group > .mat-tab-header .mat-tab-label {
+    color: #3f51b5;
+    opacity: 1;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+
+  > .mat-tab-group > .mat-tab-header .mat-tab-label-active {
+    background-color: #e0e0e0;
+  }
+
+  .mat-tab-body-content {
+    padding: 2px;
+  }
+}
+
+.mat-tab-group-sub {
+  > .mat-tab-header {
+    padding-bottom: 17px;
+  }
+
+  .mat-tab-label {
+    height: 35px;
+    border: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    text-transform: uppercase;
+    font-size: 11px;
+  }
+
+  > .mat-tab-header .mat-tab-label-active {
+    opacity: 1;
+  }
+}
