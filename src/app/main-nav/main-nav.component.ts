@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-nav.component.scss']
 })
 export class MainNavComponent implements OnInit {
+  links = [{name: 'Заявление', path: ''}, {name: 'Документация', path: 'documents'}, {name: 'Заключение', path: 'conclusion'}];
+  activeLink = this.links[2];
 
   constructor() { }
 

@@ -38,19 +38,15 @@ body {
     margin-bottom: 30px;
   }
 
-  > .mat-tab-group > .mat-tab-header .mat-tab-label {
+  .main-nav-tabs .mat-tab-link {
     color: #3f51b5;
     opacity: 1;
     font-size: 13px;
     text-transform: uppercase;
   }
 
-  > .mat-tab-group > .mat-tab-header .mat-tab-label-active {
+  .main-nav-tabs .mat-tab-label-active {
     background-color: #e0e0e0;
-  }
-
-  .mat-tab-body-content {
-    padding: 2px;
   }
 }
 
