@@ -19,13 +19,17 @@ import { ConclusionWorkComponent } from './conclusion/conclusion-work/conclusion
 import { ConclusionGeneralComponent } from './conclusion/conclusion-general/conclusion-general.component';
 import { ConclusionPrintingFormComponent } from './conclusion/conclusion-printing-form/conclusion-printing-form.component';
 
+const conclusionRoutes: Routes = [
+  { path: '', component: ConclusionWorkComponent},
+  { path: 'general', component: ConclusionGeneralComponent},
+  { path: 'print-form', component: ConclusionPrintingFormComponent}
+];
+
 const appRoutes: Routes = [
-  { path: '', component: DeclarationComponent},
+  { path: '', component: ConclusionComponent, children: conclusionRoutes},
+  { path: 'conclusion', component: ConclusionComponent, children: conclusionRoutes},
+  { path: 'declaration', component: DeclarationComponent},
   { path: 'documents', component: DocumentationComponent},
-  { path: 'conclusion', component: ConclusionComponent},
-  { path: 'conclusion/conclusion-work', component: ConclusionWorkComponent},
-  { path: 'conclusion/conclusion-general', component: ConclusionGeneralComponent},
-  { path: 'conclusion/conclusion-printing-form', component: ConclusionPrintingFormComponent},
   { path: '**', component: NotFoundComponent }
 ];
 

@@ -6,8 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./conclusion.component.scss']
 })
 export class ConclusionComponent implements OnInit {
-  links = [{name: 'Моя работа', path: 'conclusion-work'}, {name: 'Все разделы', path: 'conclusion-general'}, {name: 'Печатная форма', path: 'conclusion-printing-form'}];
-  activeLink = this.links[2];
+  links = [
+    {name: 'Моя работа', path: '/conclusion'},
+    {name: 'Все разделы', path: '/conclusion/general'},
+    {name: 'Печатная форма', path: '/conclusion/print-form'}
+    ];
+  activeLink = this.links[0];
 
   constructor() { }
 

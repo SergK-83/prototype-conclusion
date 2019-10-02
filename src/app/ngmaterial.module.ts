@@ -10,6 +10,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatTreeModule } from '@angular/material/tree';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
   imports: [MatButtonModule],
@@ -22,7 +24,9 @@ import { MatInputModule } from '@angular/material/input';
     MatCardModule,
     MatExpansionModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatTreeModule,
+    MatCheckboxModule
   ]
 })
 export class MaterialAppModule { }
