@@ -5,6 +5,7 @@
   "projects": {
     "prototype-conclusion": {
       "projectType": "application",
+      "prefix": "",
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"

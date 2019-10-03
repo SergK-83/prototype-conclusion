@@ -20,13 +20,13 @@ import { ConclusionGeneralComponent } from './conclusion/conclusion-general/conc
 import { ConclusionPrintingFormComponent } from './conclusion/conclusion-printing-form/conclusion-printing-form.component';
 
 const conclusionRoutes: Routes = [
-  { path: '', component: ConclusionWorkComponent},
+  { path: 'work', component: ConclusionWorkComponent},
   { path: 'general', component: ConclusionGeneralComponent},
   { path: 'print-form', component: ConclusionPrintingFormComponent}
 ];
 
 const appRoutes: Routes = [
-  { path: '', component: ConclusionComponent, children: conclusionRoutes},
+  { path: '', redirectTo: '/conclusion/work', pathMatch: 'full' },
   { path: 'conclusion', component: ConclusionComponent, children: conclusionRoutes},
   { path: 'declaration', component: DeclarationComponent},
   { path: 'documents', component: DocumentationComponent},
