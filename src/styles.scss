@@ -22,6 +22,10 @@ body {
   color: #999;
 }
 
+.text-green {
+  color: #24b918;
+}
+
 .mat-checkbox-layout {
   margin-bottom: 0;
 }
@@ -145,5 +149,12 @@ block-view
 
   .mat-checkbox-layout .mat-checkbox-label {
     font-weight: 400;
+  }
+}
+
+.mat-tree-node__tools {
+  .mat-button {
+    min-width: auto;
+    padding: 0 5px;
   }
 }

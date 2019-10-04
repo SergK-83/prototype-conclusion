@@ -12,11 +12,22 @@
           <mat-tree-node *matTreeNodeDef="let node; when: hasNoContent" matTreeNodePadding>
             <button mat-icon-button disabled></button>
             <mat-form-field>
-              <input matInput #itemValue placeholder="New item...">
+              <input matInput #itemValue placeholder="Новый пункт...">
             </mat-form-field>
-            <button mat-button
-                    matTooltip="Info about the action"
-                    matTooltipPosition="right" (click)="saveNode(node, itemValue.value)"><mat-icon>done</mat-icon></button>
+            <div class="mat-tree-node__tools">
+              <button mat-button
+                      matTooltip="Сохранить"
+                      matTooltipPosition="right"
+                      (click)="saveNode(node, itemValue.value)">
+                <mat-icon class="text-green">done</mat-icon>
+              </button>
+              <button mat-button
+                      matTooltip="Отмена"
+                      matTooltipPosition="right"
+                      (click)="removeNode(node, itemValue.value)">
+                <mat-icon>clear</mat-icon>
+              </button>
+            </div>
           </mat-tree-node>
 
           <mat-tree-node *matTreeNodeDef="let node; when: hasChild" matTreeNodePadding>

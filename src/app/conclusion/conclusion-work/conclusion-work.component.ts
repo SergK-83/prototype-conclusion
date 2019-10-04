@@ -250,6 +250,11 @@ export class ConclusionWorkComponent implements OnInit {
     this._database.updateItem(nestedNode!, itemValue);
   }
 
+  /** Remove the node from database */
+  removeNode(node: TodoItemFlatNode, itemValue: string) {
+    console.log('remove');
+  }
+
   ngOnInit() {
   }
 
