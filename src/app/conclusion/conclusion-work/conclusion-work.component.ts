@@ -251,8 +251,8 @@ export class ConclusionWorkComponent implements OnInit {
   }
 
   /** Remove the node from database */
-  removeNode(node: TodoItemFlatNode, itemValue: string) {
-    console.log('remove');
+  removeNode() {
+    console.log(this);
   }
 
   ngOnInit() {
