@@ -97,6 +97,13 @@ body {
   > .mat-tab-link-container .mat-tab-label-active {
     opacity: 1;
   }
+
+  .mat-icon {
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    font-size: 15px;
+  }
 }
 
 /*
@@ -121,7 +128,7 @@ block-view
 
 .block-view__aside {
   position: relative;
-  padding-right: 20px;
+  padding-right: 48px;
 }
 
 .block-view__nav {
