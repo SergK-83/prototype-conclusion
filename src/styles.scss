@@ -18,6 +18,10 @@ body {
   margin-top: 20px !important;
 }
 
+.text-black {
+  color: #000;
+}
+
 .text-light {
   color: #999;
 }
@@ -97,9 +101,19 @@ body {
 
 /*
 =========================================
+flex-box
+=========================================
+*/
+
+.flex-box {
+  display: flex;
+}
+
+/*
+=========================================
 block-view
 =========================================
- */
+*/
 
 .block-view {
   display: flex;
@@ -127,6 +141,7 @@ block-view
 }
 
 .mat-nested-tree-node, .mat-tree-node {
+  padding: 10px 0;
   font-weight: 400;
   font-size: 12px;
 
@@ -145,6 +160,7 @@ block-view
 
 .mat-tree-node:not([role="group"]) {
   padding-left: 15px !important;
+  padding-right: 10px;
   color: rgba(0,0,0,.54);
 
   .mat-checkbox-layout .mat-checkbox-label {
@@ -157,4 +173,10 @@ block-view
     min-width: auto;
     padding: 0 5px;
   }
+}
+
+.block-view__content-header {
+  margin: 20px 0 40px;
+  font-size: 20px;
+  font-weight: 300;
 }

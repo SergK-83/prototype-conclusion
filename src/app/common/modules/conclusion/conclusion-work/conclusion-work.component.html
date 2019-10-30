@@ -37,7 +37,7 @@
                 {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
               </mat-icon>
             </button>
-            {{node.item}}
+            <a class="text-black" href="#">{{node.item}}</a>
             <button mat-icon-button (click)="addNewItem(node)"><mat-icon>add</mat-icon></button>
           </mat-tree-node>
         </mat-tree>
@@ -47,6 +47,10 @@
   </div>
 
   <div class="block-view__content">
+    <div class="block-view__content-header">
+      3. Сведения, содержащиеся в документах, представленных для проведения экспертизы результатов инженерных изысканий
+    </div>
+
     <mat-accordion multi="true">
       <mat-expansion-panel>
         <mat-expansion-panel-header>
