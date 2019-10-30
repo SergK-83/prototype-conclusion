@@ -7,12 +7,15 @@
   </mat-card-header>
   <mat-divider></mat-divider>
   <mat-card-content class="m-t-20">
+
     <nav mat-tab-nav-bar class="sub-nav-tabs text-uppercase">
       <a mat-tab-link *ngFor="let link of links"
          [routerLink]="link.path"
          (click)="activeLink = link"
          [active]="activeLink == link"> {{link.name}} </a>
     </nav>
+
     <router-outlet></router-outlet>
+
   </mat-card-content>
 </mat-card>

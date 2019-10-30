@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConclusionComponent implements OnInit {
   links = [
-    {name: 'Моя работа', path: '/conclusion/work'},
-    {name: 'Все разделы', path: '/conclusion/general'},
-    {name: 'Печатная форма', path: '/conclusion/print-form'}
+    {name: 'Моя работа', path: 'work'},
+    {name: 'Все разделы', path: 'general'},
+    {name: 'Печатная форма', path: 'print-form'}
     ];
   activeLink = this.links[0];
 
