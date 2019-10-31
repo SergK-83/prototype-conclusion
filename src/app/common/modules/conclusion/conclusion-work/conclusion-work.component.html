@@ -48,14 +48,150 @@
 
   <div class="block-view__content">
     <div class="block-view__content-header">
-      3. Сведения, содержащиеся в документах, представленных для проведения экспертизы результатов инженерных изысканий
+      1. Общие положения и сведения о заключении экспертизы
     </div>
 
     <mat-accordion multi="true">
       <mat-expansion-panel>
         <mat-expansion-panel-header>
           <mat-panel-title>
-            1.5 Сведения о составе документов, предоставленных для проведения экспертизы
+            1.1. Сведения об организации по проведению экспертизы
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Наименование организации:</mat-label>
+          <textarea matInput></textarea>
+        </mat-form-field>
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Место нахождения, адрес:</mat-label>
+          <textarea matInput></textarea>
+        </mat-form-field>
+        <div class="row">
+          <div class="col-xs-4">
+            <mat-form-field>
+              <mat-label>ОГРН:</mat-label>
+              <input matInput>
+            </mat-form-field>
+          </div>
+          <div class="col-xs-4">
+            <mat-form-field>
+              <mat-label>ИНН:</mat-label>
+              <input matInput>
+            </mat-form-field>
+          </div>
+          <div class="col-xs-4">
+            <mat-form-field>
+              <mat-label>КПП:</mat-label>
+              <input matInput>
+            </mat-form-field>
+          </div>
+        </div>
+        <hr class="hr-dashed">
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Тел/ факс:</mat-label>
+          <input matInput>
+        </mat-form-field>
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>E-mail:</mat-label>
+          <input matInput>
+        </mat-form-field>
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Сайт:</mat-label>
+          <input matInput>
+        </mat-form-field>
+      </mat-expansion-panel>
+      <mat-expansion-panel expanded>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            1.2. Сведения о заявителе, застройщике, техническом заказчике
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div>
+          <h5>Заявитель:</h5>
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Наименование организации:</mat-label>
+            <textarea matInput></textarea>
+          </mat-form-field>
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Место нахождения, адрес:</mat-label>
+            <textarea matInput></textarea>
+          </mat-form-field>
+          <div class="row">
+            <div class="col-xs-4">
+              <mat-form-field>
+                <mat-label>ОГРН:</mat-label>
+                <input matInput>
+              </mat-form-field>
+            </div>
+            <div class="col-xs-4">
+              <mat-form-field>
+                <mat-label>ИНН:</mat-label>
+                <input matInput>
+              </mat-form-field>
+            </div>
+            <div class="col-xs-4">
+              <mat-form-field>
+                <mat-label>КПП:</mat-label>
+                <input matInput>
+              </mat-form-field>
+            </div>
+          </div>
+          <hr class="hr-dashed">
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Тел/ факс:</mat-label>
+            <input matInput>
+          </mat-form-field>
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>E-mail:</mat-label>
+            <input matInput>
+          </mat-form-field>
+        </div>
+        <div>
+          <h5>Застройщик:</h5>
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Наименование организации:</mat-label>
+            <textarea matInput></textarea>
+          </mat-form-field>
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Место нахождения, адрес:</mat-label>
+            <textarea matInput></textarea>
+          </mat-form-field>
+          <div class="row">
+            <div class="col-xs-4">
+              <mat-form-field>
+                <mat-label>ОГРН:</mat-label>
+                <input matInput>
+              </mat-form-field>
+            </div>
+            <div class="col-xs-4">
+              <mat-form-field>
+                <mat-label>ИНН:</mat-label>
+                <input matInput>
+              </mat-form-field>
+            </div>
+            <div class="col-xs-4">
+              <mat-form-field>
+                <mat-label>КПП:</mat-label>
+                <input matInput>
+              </mat-form-field>
+            </div>
+          </div>
+          <hr class="hr-dashed">
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Тел/ факс:</mat-label>
+            <input matInput>
+          </mat-form-field>
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>E-mail:</mat-label>
+            <input matInput>
+          </mat-form-field>
+        </div>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            1.3. Основания для проведения экспертизы
           </mat-panel-title>
         </mat-expansion-panel-header>
 
@@ -66,83 +202,6 @@
         <mat-form-field>
           <input matInput placeholder="Age">
         </mat-form-field>
-      </mat-expansion-panel>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            3.5 Иные сведения
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-        <p>I'm visible because I am open</p>
-      </mat-expansion-panel>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            1.5 Сведения о составе документов, предоставленных для проведения экспертизы
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-
-        <mat-form-field>
-          <input matInput placeholder="First name">
-        </mat-form-field>
-
-        <mat-form-field>
-          <input matInput placeholder="Age">
-        </mat-form-field>
-      </mat-expansion-panel>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            3.5 Иные сведения
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-        <p>I'm visible because I am open</p>
-      </mat-expansion-panel>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            1.5 Сведения о составе документов, предоставленных для проведения экспертизы
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-
-        <mat-form-field>
-          <input matInput placeholder="First name">
-        </mat-form-field>
-
-        <mat-form-field>
-          <input matInput placeholder="Age">
-        </mat-form-field>
-      </mat-expansion-panel>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            3.5 Иные сведения
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-        <p>I'm visible because I am open</p>
-      </mat-expansion-panel>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            1.5 Сведения о составе документов, предоставленных для проведения экспертизы
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-
-        <mat-form-field>
-          <input matInput placeholder="First name">
-        </mat-form-field>
-
-        <mat-form-field>
-          <input matInput placeholder="Age">
-        </mat-form-field>
-      </mat-expansion-panel>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            3.5 Иные сведения
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-        <p>I'm visible because I am open</p>
       </mat-expansion-panel>
     </mat-accordion>
   </div>

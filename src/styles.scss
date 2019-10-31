@@ -10,6 +10,10 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+a:hover, a:focus {
+  text-decoration: none;
+}
+
 .m-b-20 {
   margin-bottom: 20px !important;
 }
@@ -28,6 +32,18 @@ body {
 
 .text-green {
   color: #24b918;
+}
+
+.full-width {
+  width: 100% !important;
+}
+
+hr {
+  border-top-color: rgba(0,0,0,.12);
+}
+
+hr.hr-dashed {
+  border-style: dashed;
 }
 
 .mat-checkbox-layout {
@@ -168,7 +184,7 @@ block-view
 .mat-tree-node:not([role="group"]) {
   padding-left: 15px !important;
   padding-right: 10px;
-  color: rgba(0,0,0,.54);
+  color: rgba(0,0,0,.65);
 
   .mat-checkbox-layout .mat-checkbox-label {
     font-weight: 400;
