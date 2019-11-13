@@ -47,7 +47,7 @@
   </div>
 
   <div class="block-view__content">
-    <div class="block-view__content-header text-muted">
+    <div class="block-view__content-header">
       1. Общие положения и сведения о заключении экспертизы
     </div>
 
@@ -55,7 +55,7 @@
       <mat-expansion-panel>
         <mat-expansion-panel-header>
           <mat-panel-title>
-            1.1. Сведения об организации по проведению экспертизы
+            Сведения об организации по проведению экспертизы
           </mat-panel-title>
         </mat-expansion-panel-header>
 
@@ -101,97 +101,150 @@
           <input matInput>
         </mat-form-field>
       </mat-expansion-panel>
+
       <mat-expansion-panel expanded>
         <mat-expansion-panel-header>
           <mat-panel-title>
-            1.2. Сведения о заявителе, застройщике, техническом заказчике
+            Сведения о заявителе
           </mat-panel-title>
         </mat-expansion-panel-header>
-        <div>
-          <h5 class="text-uppercase"><i>Заявитель:</i></h5>
-          <mat-form-field class="full-width" appearance="outline">
-            <mat-label>Наименование организации:</mat-label>
-            <textarea matInput></textarea>
-          </mat-form-field>
-          <mat-form-field class="full-width" appearance="outline">
-            <mat-label>Место нахождения, адрес:</mat-label>
-            <textarea matInput></textarea>
-          </mat-form-field>
-          <div class="row">
-            <div class="col-xs-4">
-              <mat-form-field>
-                <mat-label>ОГРН:</mat-label>
-                <input matInput>
-              </mat-form-field>
-            </div>
-            <div class="col-xs-4">
-              <mat-form-field>
-                <mat-label>ИНН:</mat-label>
-                <input matInput>
-              </mat-form-field>
-            </div>
-            <div class="col-xs-4">
-              <mat-form-field>
-                <mat-label>КПП:</mat-label>
-                <input matInput>
-              </mat-form-field>
-            </div>
+
+        <p class="help-block">* Следующие поля были заполнены автоматически из данных об объекте</p>
+
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Наименование организации:</mat-label>
+          <textarea matInput></textarea>
+        </mat-form-field>
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Место нахождения, адрес:</mat-label>
+          <textarea matInput></textarea>
+        </mat-form-field>
+        <div class="row">
+          <div class="col-xs-4">
+            <mat-form-field>
+              <mat-label>ОГРН:</mat-label>
+              <input matInput>
+            </mat-form-field>
           </div>
-          <hr class="hr-dashed">
-          <mat-form-field class="full-width" appearance="outline">
-            <mat-label>Телефон:</mat-label>
-            <input matInput>
-          </mat-form-field>
-          <mat-form-field class="full-width" appearance="outline">
-            <mat-label>E-mail:</mat-label>
-            <input matInput>
-          </mat-form-field>
-        </div>
-        <div>
-          <h5 class="text-uppercase"><i>Застройщик:</i></h5>
-          <mat-form-field class="full-width" appearance="outline">
-            <mat-label>Наименование организации:</mat-label>
-            <textarea matInput></textarea>
-          </mat-form-field>
-          <mat-form-field class="full-width" appearance="outline">
-            <mat-label>Место нахождения, адрес:</mat-label>
-            <textarea matInput></textarea>
-          </mat-form-field>
-          <div class="row">
-            <div class="col-xs-4">
-              <mat-form-field>
-                <mat-label>ОГРН:</mat-label>
-                <input matInput>
-              </mat-form-field>
-            </div>
-            <div class="col-xs-4">
-              <mat-form-field>
-                <mat-label>ИНН:</mat-label>
-                <input matInput>
-              </mat-form-field>
-            </div>
-            <div class="col-xs-4">
-              <mat-form-field>
-                <mat-label>КПП:</mat-label>
-                <input matInput>
-              </mat-form-field>
-            </div>
+          <div class="col-xs-4">
+            <mat-form-field>
+              <mat-label>ИНН:</mat-label>
+              <input matInput>
+            </mat-form-field>
           </div>
-          <hr class="hr-dashed">
-          <mat-form-field class="full-width" appearance="outline">
-            <mat-label>Телефон:</mat-label>
-            <input matInput>
-          </mat-form-field>
-          <mat-form-field class="full-width" appearance="outline">
-            <mat-label>E-mail:</mat-label>
-            <input matInput>
-          </mat-form-field>
+          <div class="col-xs-4">
+            <mat-form-field>
+              <mat-label>КПП:</mat-label>
+              <input matInput>
+            </mat-form-field>
+          </div>
         </div>
+        <hr class="hr-dashed">
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Телефон:</mat-label>
+          <input matInput>
+        </mat-form-field>
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>E-mail:</mat-label>
+          <input matInput>
+        </mat-form-field>
       </mat-expansion-panel>
+
       <mat-expansion-panel>
         <mat-expansion-panel-header>
           <mat-panel-title>
-            1.3. Основания для проведения экспертизы
+            Сведения о застройщике
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Наименование организации:</mat-label>
+          <textarea matInput></textarea>
+        </mat-form-field>
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Место нахождения, адрес:</mat-label>
+          <textarea matInput></textarea>
+        </mat-form-field>
+        <div class="row">
+          <div class="col-xs-4">
+            <mat-form-field>
+              <mat-label>ОГРН:</mat-label>
+              <input matInput>
+            </mat-form-field>
+          </div>
+          <div class="col-xs-4">
+            <mat-form-field>
+              <mat-label>ИНН:</mat-label>
+              <input matInput>
+            </mat-form-field>
+          </div>
+          <div class="col-xs-4">
+            <mat-form-field>
+              <mat-label>КПП:</mat-label>
+              <input matInput>
+            </mat-form-field>
+          </div>
+        </div>
+        <hr class="hr-dashed">
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Телефон:</mat-label>
+          <input matInput>
+        </mat-form-field>
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>E-mail:</mat-label>
+          <input matInput>
+        </mat-form-field>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Сведения о техническом заказчике
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Наименование организации:</mat-label>
+          <textarea matInput></textarea>
+        </mat-form-field>
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Место нахождения, адрес:</mat-label>
+          <textarea matInput></textarea>
+        </mat-form-field>
+        <div class="row">
+          <div class="col-xs-4">
+            <mat-form-field>
+              <mat-label>ОГРН:</mat-label>
+              <input matInput>
+            </mat-form-field>
+          </div>
+          <div class="col-xs-4">
+            <mat-form-field>
+              <mat-label>ИНН:</mat-label>
+              <input matInput>
+            </mat-form-field>
+          </div>
+          <div class="col-xs-4">
+            <mat-form-field>
+              <mat-label>КПП:</mat-label>
+              <input matInput>
+            </mat-form-field>
+          </div>
+        </div>
+        <hr class="hr-dashed">
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Телефон:</mat-label>
+          <input matInput>
+        </mat-form-field>
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>E-mail:</mat-label>
+          <input matInput>
+        </mat-form-field>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Основания для проведения экспертизы
           </mat-panel-title>
         </mat-expansion-panel-header>
 
