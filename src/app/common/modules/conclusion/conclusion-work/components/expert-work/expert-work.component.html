@@ -8,45 +8,23 @@
     <button mat-stroked-button matTooltip="Создать текстовый блок">Текст</button>
     <button mat-stroked-button matTooltip="Создать таблицу">Таблица</button>
   </div>
-  <div class="custom-workform__content">
-    <mat-form-field class="full-width">
-      <input matInput value="Введите заголовок">
-    </mat-form-field>
+  <div class="custom-workform__form">
 
-    <mat-form-field class="full-width" appearance="outline">
-      <textarea matInput placeholder="Введите текст"></textarea>
-    </mat-form-field>
+    <div class="custom-workform__form-item">
+      <mat-icon class="custom-workform__form-item-drag">drag_indicator</mat-icon>
+      <mat-form-field class="full-width" floatLabel="never">
+        <input class="custom-workform__form-input-title" matInput placeholder="Введите заголовок ...">
+      </mat-form-field>
+      <mat-icon class="custom-workform__form-item-remove">delete</mat-icon>
+    </div>
 
-    <mat-form-field class="full-width" appearance="outline">
-      <textarea matInput></textarea>
-    </mat-form-field>
+    <div class="custom-workform__form-item">
+      <mat-icon class="custom-workform__form-item-drag">drag_indicator</mat-icon>
+      <mat-form-field class="full-width" appearance="outline">
+        <textarea matInput cdkTextareaAutosize placeholder="Введите текст..."></textarea>
+      </mat-form-field>
+      <mat-icon class="custom-workform__form-item-remove">delete</mat-icon>
+    </div>
 
-    <mat-form-field class="full-width" appearance="outline">
-      <textarea matInput></textarea>
-    </mat-form-field>
-
-    <mat-form-field class="full-width" appearance="outline">
-      <textarea matInput></textarea>
-    </mat-form-field>
-
-    <mat-form-field class="full-width" appearance="outline">
-      <textarea matInput></textarea>
-    </mat-form-field>
-
-    <mat-form-field class="full-width" appearance="outline">
-      <textarea matInput></textarea>
-    </mat-form-field>
-
-    <mat-form-field class="full-width" appearance="outline">
-      <textarea matInput></textarea>
-    </mat-form-field>
-
-    <mat-form-field class="full-width" appearance="outline">
-      <textarea matInput></textarea>
-    </mat-form-field>
-
-    <mat-form-field class="full-width" appearance="outline">
-      <textarea matInput></textarea>
-    </mat-form-field>
   </div>
 </div>
