@@ -9,6 +9,7 @@ import {ConclusionGeneralComponent} from './conclusion-general/conclusion-genera
 import {ConclusionPrintingFormComponent} from './conclusion-printing-form/conclusion-printing-form.component';
 import {ConclusionWorkComponent} from './conclusion-work/conclusion-work.component';
 import {ConclusionComponent} from './conclusion.component';
+import {components} from './conclusion-work/components';
 
 const routes: Routes = [
   {
@@ -46,7 +47,9 @@ const routes: Routes = [
     ConclusionComponent,
     ConclusionWorkComponent,
     ConclusionGeneralComponent,
-    ConclusionPrintingFormComponent
-  ]
+    ConclusionPrintingFormComponent,
+
+    components,
+  ],
 })
 export  class ConclusionModule {}

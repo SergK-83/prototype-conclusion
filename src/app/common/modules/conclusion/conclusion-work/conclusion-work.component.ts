@@ -34,7 +34,8 @@ const TREE_DATA = {
     '3.1. Дата подготовки отчетной документации по результатам инженерных изысканий',
     '3.2. Сведения о видах инженерных изысканий',
     '3.3. Сведения о местоположении района (площадки, трассы) проведения инженерных изысканий'
-  ]
+  ],
+  'Работа эксперта': []
 };
 
 /**
@@ -104,6 +105,10 @@ export class ChecklistDatabase {
   providers: [ChecklistDatabase]
 })
 export class ConclusionWorkComponent implements OnInit {
+
+  curentNodeName: string;
+
+
   /** Map from flat node to nested node. This helps us finding the nested node to be modified */
   flatNodeMap = new Map<TodoItemFlatNode, TodoItemNode>();
 
