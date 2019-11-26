@@ -13,6 +13,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatTreeModule } from '@angular/material/tree';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatTableModule } from '@angular/material/table';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   imports: [MatButtonModule],
@@ -28,7 +30,9 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatInputModule,
     MatTreeModule,
     MatCheckboxModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatTableModule,
+    MatMenuModule
   ]
 })
 export class MaterialAppModule { }

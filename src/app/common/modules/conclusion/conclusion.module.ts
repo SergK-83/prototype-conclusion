@@ -4,6 +4,7 @@ import {Routes, RouterModule} from '@angular/router';
 import {FormsModule} from '@angular/forms';
 
 import {MaterialAppModule} from '../../../ngmaterial.module';
+import { SimplebarAngularModule } from 'simplebar-angular';
 
 import {ConclusionGeneralComponent} from './conclusion-general/conclusion-general.component';
 import {ConclusionPrintingFormComponent} from './conclusion-printing-form/conclusion-printing-form.component';
@@ -41,7 +42,8 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes),
     FormsModule,
-    MaterialAppModule
+    MaterialAppModule,
+    SimplebarAngularModule
   ],
   declarations: [
     ConclusionComponent,

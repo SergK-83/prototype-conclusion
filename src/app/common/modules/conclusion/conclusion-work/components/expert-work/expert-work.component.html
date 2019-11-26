@@ -13,7 +13,7 @@
     <div class="custom-workform__form-item">
       <mat-icon class="custom-workform__form-item-drag">drag_indicator</mat-icon>
       <mat-form-field class="full-width" floatLabel="never">
-        <input class="custom-workform__form-input-title" matInput placeholder="Введите заголовок ...">
+        <textarea class="custom-workform__form-input-title" matInput cdkTextareaAutosize cdkAutosizeMinRows="1" placeholder="Введите заголовок ..."></textarea>
       </mat-form-field>
       <mat-icon class="custom-workform__form-item-remove">delete</mat-icon>
     </div>
@@ -21,8 +21,178 @@
     <div class="custom-workform__form-item">
       <mat-icon class="custom-workform__form-item-drag">drag_indicator</mat-icon>
       <mat-form-field class="full-width" appearance="outline">
-        <textarea matInput cdkTextareaAutosize placeholder="Введите текст..."></textarea>
+        <textarea class="custom-workform__form-input-text" matInput cdkTextareaAutosize cdkAutosizeMinRows="3" placeholder="Введите текст..."></textarea>
       </mat-form-field>
+      <mat-icon class="custom-workform__form-item-remove">delete</mat-icon>
+    </div>
+
+    <div class="custom-workform__form-item">
+      <mat-icon class="custom-workform__form-item-drag">drag_indicator</mat-icon>
+      <mat-form-field class="full-width" floatLabel="never">
+        <textarea class="custom-workform__form-input-title" matInput cdkTextareaAutosize cdkAutosizeMinRows="1" placeholder="Введите заголовок ..."></textarea>
+      </mat-form-field>
+      <mat-icon class="custom-workform__form-item-remove">delete</mat-icon>
+    </div>
+
+    <div class="custom-workform__form-item">
+      <mat-icon class="custom-workform__form-item-drag">drag_indicator</mat-icon>
+
+      <div class="custom-workform__table-wrap">
+        <ngx-simplebar [options]="simplebarOptions">
+          <table class="custom-workform__table table table-hover">
+            <thead>
+            <tr>
+              <td>
+                <mat-form-field class="full-width" floatLabel="never">
+                  <textarea class="text-center" matInput cdkTextareaAutosize placeholder="Заголовок"></textarea>
+                </mat-form-field>
+              </td>
+              <td>
+                <mat-form-field class="full-width" floatLabel="never">
+                  <textarea matInput cdkTextareaAutosize placeholder="Заголовок"></textarea>
+                </mat-form-field>
+              </td>
+              <td>
+                <mat-form-field class="full-width" floatLabel="never">
+                  <textarea matInput cdkTextareaAutosize placeholder="Заголовок"></textarea>
+                </mat-form-field>
+              </td>
+              <td>
+                <mat-form-field class="full-width" floatLabel="never">
+                  <textarea matInput cdkTextareaAutosize placeholder="Заголовок"></textarea>
+                </mat-form-field>
+              </td>
+              <td class="custom-workform__table-td-sticky-right"></td>
+            </tr>
+            </thead>
+            <tbody>
+
+            <tr>
+              <td>
+                <mat-form-field class="full-width" floatLabel="never" appearance="outline">
+                  <textarea matInput cdkTextareaAutosize></textarea>
+                </mat-form-field>
+              </td>
+              <td>
+                <mat-form-field class="full-width" floatLabel="never" appearance="outline">
+                  <textarea matInput cdkTextareaAutosize></textarea>
+                </mat-form-field>
+              </td>
+              <td>
+                <mat-form-field class="full-width" floatLabel="never" appearance="outline">
+                  <textarea matInput cdkTextareaAutosize></textarea>
+                </mat-form-field>
+              </td>
+              <td>
+                <mat-form-field class="full-width" floatLabel="never" appearance="outline">
+                  <textarea matInput cdkTextareaAutosize></textarea>
+                </mat-form-field>
+              </td>
+              <td class="custom-workform__table-td-sticky-right">
+                <div class="custom-workform__table-td-menu">
+                  <button mat-icon-button [matMenuTriggerFor]="tableMenu1" aria-label="Example icon-button with a menu">
+                    <mat-icon>more_vert</mat-icon>
+                  </button>
+                  <mat-menu #tableMenu1="matMenu">
+                    <button mat-menu-item>
+                      Удалить строку
+                    </button>
+                    <button mat-menu-item>
+                      Добавить строку сверху
+                    </button>
+                    <button mat-menu-item>
+                      Добавить строку снизу
+                    </button>
+                  </mat-menu>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <mat-form-field class="full-width" floatLabel="never">
+                  <textarea matInput cdkTextareaAutosize></textarea>
+                </mat-form-field>
+              </td>
+              <td>
+                <mat-form-field class="full-width" floatLabel="never">
+                  <textarea matInput cdkTextareaAutosize></textarea>
+                </mat-form-field>
+              </td>
+              <td>
+                <mat-form-field class="full-width" floatLabel="never">
+                  <textarea matInput cdkTextareaAutosize></textarea>
+                </mat-form-field>
+              </td>
+              <td>
+                <mat-form-field class="full-width" floatLabel="never">
+                  <textarea matInput cdkTextareaAutosize></textarea>
+                </mat-form-field>
+              </td>
+              <td class="custom-workform__table-td-sticky-right">
+                <div class="custom-workform__table-td-menu">
+                  <button mat-icon-button [matMenuTriggerFor]="tableMenu2" aria-label="Example icon-button with a menu">
+                    <mat-icon>more_vert</mat-icon>
+                  </button>
+                  <mat-menu #tableMenu2="matMenu">
+                    <button mat-menu-item>
+                      Удалить
+                    </button>
+                    <button mat-menu-item>
+                      Добавить строку сверху
+                    </button>
+                    <button mat-menu-item>
+                      Добавить строку снизу
+                    </button>
+                  </mat-menu>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <mat-form-field class="full-width" floatLabel="never">
+                  <textarea matInput cdkTextareaAutosize></textarea>
+                </mat-form-field>
+              </td>
+              <td>
+                <mat-form-field class="full-width" floatLabel="never">
+                  <textarea matInput cdkTextareaAutosize></textarea>
+                </mat-form-field>
+              </td>
+              <td>
+                <mat-form-field class="full-width" floatLabel="never">
+                  <textarea matInput cdkTextareaAutosize></textarea>
+                </mat-form-field>
+              </td>
+              <td>
+                <mat-form-field class="full-width" floatLabel="never">
+                  <textarea matInput cdkTextareaAutosize></textarea>
+                </mat-form-field>
+              </td>
+              <td class="custom-workform__table-td-sticky-right">
+                <div class="custom-workform__table-td-menu">
+                  <button mat-icon-button [matMenuTriggerFor]="tableMenu3" aria-label="Example icon-button with a menu">
+                    <mat-icon>more_vert</mat-icon>
+                  </button>
+                  <mat-menu #tableMenu3="matMenu">
+                    <button mat-menu-item>
+                      Удалить строку
+                    </button>
+                    <button mat-menu-item>
+                      Добавить строку сверху
+                    </button>
+                    <button mat-menu-item>
+                      Добавить строку снизу
+                    </button>
+                  </mat-menu>
+                </div>
+              </td>
+            </tr>
+
+            </tbody>
+          </table>
+        </ngx-simplebar>
+      </div>
+
       <mat-icon class="custom-workform__form-item-remove">delete</mat-icon>
     </div>
 
