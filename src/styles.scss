@@ -187,12 +187,6 @@ block-view
 .block-view__content {
   flex: 0 0 calc(100% - 380px);
   max-width: calc(100% - 380px);
-
-  textarea, input, select {
-    font-size: 13px;
-    line-height: 1.3;
-    font-weight: 100;
-  }
 }
 
 .block-view__content-header {
@@ -285,11 +279,11 @@ simplebar-scrollbar
   opacity: .25 !important;
 }
 
-  /*
-  =========================================
-  custom-workspace
-  =========================================
-  */
+/*
+=========================================
+custom-workspace
+=========================================
+*/
 
 .custom-workform {
   position: relative;
@@ -300,7 +294,7 @@ simplebar-scrollbar
   top: 0;
   text-align: right;
   padding: 10px 20px;
-  background: rgba(223,238,254, .8);
+  background: rgba(223,238,254, .9);
   z-index: 5;
 
   .mat-stroked-button {
@@ -316,18 +310,31 @@ simplebar-scrollbar
 }
 
 .custom-workform__form {
+  margin-top: -2px;
   padding: 10px 0 20px;
   box-shadow: inset 0 0 2px 1px rgba(0,0,0, .1);
 }
 
 .custom-workform__form-item {
   position: relative;
-  padding: 0 40px 0 34px;
+  padding: 5px 40px 5px 34px;
+
+  .mat-form-field-outline {
+    background-color: #fff;
+  }
+
+  .mat-form-field-appearance-legacy .mat-form-field-infix {
+    background-color: #fff;
+  }
 
   textarea.mat-input-element {
     padding: 0;
     margin: 0;
   }
+}
+
+.custom-workform__form-item:hover {
+  background-color: #f8f8f8;
 }
 
 .custom-workform__form-item-drag,
@@ -357,12 +364,30 @@ simplebar-scrollbar
 }
 
 .custom-workform__form-input-title {
-  font-size: 14px !important;
-  font-weight: 400 !important;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.custom-workform__form-input-subtitle {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.3;
+
+  .mat-form-field-underline {
+    background-color: rgba(0,0,0,.2);
+  }
 }
 
 .custom-workform__form-input-text {
-  text-indent: 30px;
+  font-size: 14px;
+  line-height: 1.3;
+  font-weight: 100;
+
+  textarea {
+    text-indent: 30px;
+  }
 }
 
 .custom-workform__table-wrap {
@@ -373,6 +398,7 @@ simplebar-scrollbar
   border-collapse: separate;
   margin-bottom: 0;
   font-size: 13px;
+  background-color: #fff;
 
   .mat-form-field-infix {
     border-top-width: 0;
