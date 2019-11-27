@@ -5,6 +5,7 @@ import {FormsModule} from '@angular/forms';
 
 import {MaterialAppModule} from '../../../ngmaterial.module';
 import { SimplebarAngularModule } from 'simplebar-angular';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 import {ConclusionGeneralComponent} from './conclusion-general/conclusion-general.component';
 import {ConclusionPrintingFormComponent} from './conclusion-printing-form/conclusion-printing-form.component';
@@ -43,7 +44,8 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     FormsModule,
     MaterialAppModule,
-    SimplebarAngularModule
+    SimplebarAngularModule,
+    DragDropModule
   ],
   declarations: [
     ConclusionComponent,

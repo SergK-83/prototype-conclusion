@@ -1,235 +1,271 @@
 <div class="block-view__content-header">
-  Работа эксперта
+  4.2.2.5. Сведения об инженерном оборудовании, о сетях инженерно-технического обеспечения, перечень инженерно-технических мероприятий, содержание технологических решений
 </div>
 
-<div class="custom-workform">
-  <div class="custom-workform__tools">
-    <div class="btn-group" role="group">
-      <button mat-stroked-button matTooltip="Создать заголовок">Заголовок</button>
-      <button mat-stroked-button matTooltip="Создать подзаголовок">Подзаголовок</button>
-      <button mat-stroked-button matTooltip="Создать текстовый блок">Текст</button>
-      <button mat-stroked-button matTooltip="Создать таблицу">Таблица</button>
-    </div>
-  </div>
-  <div class="custom-workform__form">
-
-    <div class="custom-workform__form-item">
-      <mat-icon class="custom-workform__form-item-drag">drag_indicator</mat-icon>
-      <mat-form-field class="full-width custom-workform__form-input-title" floatLabel="never">
-        <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="1" placeholder="Введите заголовок ...">Подраздел «Система электроснабжения»</textarea>
-      </mat-form-field>
-      <mat-icon class="custom-workform__form-item-remove">delete</mat-icon>
+<mat-card>
+  <div class="custom-workform">
+    <div class="custom-workform__header">
+      <div class="custom-workform__header-tools">
+        <button mat-stroked-button matTooltip="Создать заголовок">Заголовок</button>
+        <button mat-stroked-button matTooltip="Создать подзаголовок">Подзаголовок</button>
+        <button mat-stroked-button matTooltip="Создать текстовый блок">Текст</button>
+        <button mat-stroked-button matTooltip="Создать таблицу">Таблица</button>
+      </div>
+      <button mat-button color="primary" class="fs-13"><mat-icon>playlist_add</mat-icon> Список заключений</button>
     </div>
 
-    <div class="custom-workform__form-item">
-      <mat-icon class="custom-workform__form-item-drag">drag_indicator</mat-icon>
-      <mat-form-field class="full-width custom-workform__form-input-text" appearance="outline">
-        <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="3" placeholder="Введите текст...">Электроснабжение детского сада выполнено на основании технических условий от 05.12.2018 б/н для присоединения к электрическим сетям, выданных ООО «РСК Сибиряк» электроснабжение детского сада предусмотрено от существующего РУ-0,4 кВ трансформаторной подстанции ТП-5.</textarea>
-      </mat-form-field>
-      <mat-icon class="custom-workform__form-item-remove">delete</mat-icon>
-    </div>
+    <div class="custom-workform__form">
 
-    <div class="custom-workform__form-item">
-      <mat-icon class="custom-workform__form-item-drag">drag_indicator</mat-icon>
-      <mat-form-field class="full-width custom-workform__form-input-text" appearance="outline">
-        <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="3" placeholder="Введите текст...">Кабельные линии выполняются взаиморезервируемыми кабелями марки АПВБбшв сечением 4х240 мм², каждая линия, проложенными в земле в соответствии с т.п. А11-2011. Длина кабельной линии – 117,0 м.</textarea>
-      </mat-form-field>
-      <mat-icon class="custom-workform__form-item-remove">delete</mat-icon>
-    </div>
+      <div cdkDropList>
 
-    <div class="custom-workform__form-item">
-      <mat-icon class="custom-workform__form-item-drag">drag_indicator</mat-icon>
-      <mat-form-field class="full-width custom-workform__form-input-subtitle" floatLabel="never">
-        <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="1" placeholder="Введите подзаголовок ...">Наружное освещение</textarea>
-      </mat-form-field>
-      <mat-icon class="custom-workform__form-item-remove">delete</mat-icon>
-    </div>
+        <div class="custom-workform__form-item" cdkDrag>
+          <mat-icon class="custom-workform__form-item-drag">drag_indicator</mat-icon>
+          <mat-form-field class="full-width custom-workform__form-input-title" floatLabel="never">
+            <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="1" placeholder="Введите заголовок ...">Подраздел «Система электроснабжения»</textarea>
+          </mat-form-field>
+          <mat-icon class="custom-workform__form-item-remove" matTooltip="Удалить блок">delete</mat-icon>
+        </div>
 
-    <div class="custom-workform__form-item">
-      <mat-icon class="custom-workform__form-item-drag">drag_indicator</mat-icon>
-      <mat-form-field class="full-width custom-workform__form-input-text" appearance="outline">
-        <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="3" placeholder="Введите текст...">Наружное освещение территории детского сада выполняется светодиодными светильниками наружного освещения марки TL-STREET 110 PR Plus, установленными на металлических силовых граненных опорах ОГС-0,7-9 высотой 9,0 м с кабельным подводом питания.</textarea>
-      </mat-form-field>
-      <mat-icon class="custom-workform__form-item-remove">delete</mat-icon>
-    </div>
+        <div class="custom-workform__form-item" cdkDrag>
+          <mat-icon class="custom-workform__form-item-drag">drag_indicator</mat-icon>
+          <mat-form-field class="full-width custom-workform__form-input-text" appearance="outline">
+            <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="3" placeholder="Введите текст...">Электроснабжение детского сада выполнено на основании технических условий от 05.12.2018 б/н для присоединения к электрическим сетям, выданных ООО «РСК Сибиряк» электроснабжение детского сада предусмотрено от существующего РУ-0,4 кВ трансформаторной подстанции ТП-5.</textarea>
+          </mat-form-field>
+          <mat-icon class="custom-workform__form-item-remove" matTooltip="Удалить блок">delete</mat-icon>
+        </div>
 
-    <div class="custom-workform__form-item">
-      <mat-icon class="custom-workform__form-item-drag">drag_indicator</mat-icon>
-      <mat-form-field class="full-width custom-workform__form-input-text" appearance="outline">
-        <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="3" placeholder="Введите текст...">Для установки светильников предусмотрены кронштейны уличного освещения на три светильника типа К22-0,5-0,5-1-1, два светильника типа К3-1,5-2,5-1-1, а так же кронштейны на один светильник типа К1-1,5-2,5.</textarea>
-      </mat-form-field>
-      <mat-icon class="custom-workform__form-item-remove">delete</mat-icon>
-    </div>
+        <div class="custom-workform__form-item" cdkDrag>
+          <mat-icon class="custom-workform__form-item-drag">drag_indicator</mat-icon>
+          <mat-form-field class="full-width custom-workform__form-input-text" appearance="outline">
+            <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="3" placeholder="Введите текст...">Кабельные линии выполняются взаиморезервируемыми кабелями марки АПВБбшв сечением 4х240 мм², каждая линия, проложенными в земле в соответствии с т.п. А11-2011. Длина кабельной линии – 117,0 м.</textarea>
+          </mat-form-field>
+          <mat-icon class="custom-workform__form-item-remove" matTooltip="Удалить блок">delete</mat-icon>
+        </div>
 
-    <div class="custom-workform__form-item">
-      <mat-icon class="custom-workform__form-item-drag">drag_indicator</mat-icon>
-      <mat-form-field class="full-width custom-workform__form-input-title" floatLabel="never">
-        <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="1" placeholder="Введите заголовок ...">Сведения о технико-экономических показателях объекта капитального строительства</textarea>
-      </mat-form-field>
-      <mat-icon class="custom-workform__form-item-remove">delete</mat-icon>
-    </div>
+        <div class="custom-workform__form-item" cdkDrag>
+          <mat-icon class="custom-workform__form-item-drag">drag_indicator</mat-icon>
+          <mat-form-field class="full-width custom-workform__form-input-subtitle" floatLabel="never">
+            <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="1" placeholder="Введите подзаголовок ...">Наружное освещение</textarea>
+          </mat-form-field>
+          <mat-icon class="custom-workform__form-item-remove"matTooltip="Удалить блок">delete</mat-icon>
+        </div>
 
-    <div class="custom-workform__form-item">
-      <mat-icon class="custom-workform__form-item-drag">drag_indicator</mat-icon>
+        <div class="custom-workform__form-item" cdkDrag>
+          <mat-icon class="custom-workform__form-item-drag">drag_indicator</mat-icon>
+          <mat-form-field class="full-width custom-workform__form-input-text" appearance="outline">
+            <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="3" placeholder="Введите текст...">Наружное освещение территории детского сада выполняется светодиодными светильниками наружного освещения марки TL-STREET 110 PR Plus, установленными на металлических силовых граненных опорах ОГС-0,7-9 высотой 9,0 м с кабельным подводом питания.</textarea>
+          </mat-form-field>
+          <mat-icon class="custom-workform__form-item-remove" matTooltip="Удалить блок">delete</mat-icon>
+        </div>
 
-      <div class="custom-workform__table-wrap">
-        <ngx-simplebar [options]="simplebarOptions">
-          <table class="custom-workform__table table table-hover">
-            <thead>
-            <tr>
-              <td>
-                <mat-form-field class="full-width" floatLabel="never">
-                  <textarea class="text-center" matInput cdkTextareaAutosize placeholder="Заголовок"></textarea>
-                </mat-form-field>
-              </td>
-              <td>
-                <mat-form-field class="full-width" floatLabel="never">
-                  <textarea matInput cdkTextareaAutosize placeholder="Заголовок"></textarea>
-                </mat-form-field>
-              </td>
-              <td>
-                <mat-form-field class="full-width" floatLabel="never">
-                  <textarea matInput cdkTextareaAutosize placeholder="Заголовок"></textarea>
-                </mat-form-field>
-              </td>
-              <td>
-                <mat-form-field class="full-width" floatLabel="never">
-                  <textarea matInput cdkTextareaAutosize placeholder="Заголовок"></textarea>
-                </mat-form-field>
-              </td>
-              <td class="custom-workform__table-td-sticky-right"></td>
-            </tr>
-            </thead>
-            <tbody>
+        <div class="custom-workform__form-item" cdkDrag>
+          <mat-icon class="custom-workform__form-item-drag">drag_indicator</mat-icon>
+          <mat-form-field class="full-width custom-workform__form-input-text" appearance="outline">
+            <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="3" placeholder="Введите текст...">Для установки светильников предусмотрены кронштейны уличного освещения на три светильника типа К22-0,5-0,5-1-1, два светильника типа К3-1,5-2,5-1-1, а так же кронштейны на один светильник типа К1-1,5-2,5.</textarea>
+          </mat-form-field>
+          <mat-icon class="custom-workform__form-item-remove" matTooltip="Удалить блок">delete</mat-icon>
+        </div>
 
-            <tr>
-              <td>
-                <mat-form-field class="full-width" floatLabel="never" appearance="outline">
-                  <textarea matInput cdkTextareaAutosize></textarea>
-                </mat-form-field>
-              </td>
-              <td>
-                <mat-form-field class="full-width" floatLabel="never" appearance="outline">
-                  <textarea matInput cdkTextareaAutosize></textarea>
-                </mat-form-field>
-              </td>
-              <td>
-                <mat-form-field class="full-width" floatLabel="never" appearance="outline">
-                  <textarea matInput cdkTextareaAutosize></textarea>
-                </mat-form-field>
-              </td>
-              <td>
-                <mat-form-field class="full-width" floatLabel="never" appearance="outline">
-                  <textarea matInput cdkTextareaAutosize></textarea>
-                </mat-form-field>
-              </td>
-              <td class="custom-workform__table-td-sticky-right">
-                <div class="custom-workform__table-td-menu">
-                  <button mat-icon-button [matMenuTriggerFor]="tableMenu1" aria-label="Example icon-button with a menu">
-                    <mat-icon>more_vert</mat-icon>
-                  </button>
-                  <mat-menu #tableMenu1="matMenu">
-                    <button mat-menu-item>
-                      Удалить строку
-                    </button>
-                    <button mat-menu-item>
-                      Добавить строку сверху
-                    </button>
-                    <button mat-menu-item>
-                      Добавить строку снизу
-                    </button>
-                  </mat-menu>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <mat-form-field class="full-width" floatLabel="never">
-                  <textarea matInput cdkTextareaAutosize></textarea>
-                </mat-form-field>
-              </td>
-              <td>
-                <mat-form-field class="full-width" floatLabel="never">
-                  <textarea matInput cdkTextareaAutosize></textarea>
-                </mat-form-field>
-              </td>
-              <td>
-                <mat-form-field class="full-width" floatLabel="never">
-                  <textarea matInput cdkTextareaAutosize></textarea>
-                </mat-form-field>
-              </td>
-              <td>
-                <mat-form-field class="full-width" floatLabel="never">
-                  <textarea matInput cdkTextareaAutosize></textarea>
-                </mat-form-field>
-              </td>
-              <td class="custom-workform__table-td-sticky-right">
-                <div class="custom-workform__table-td-menu">
-                  <button mat-icon-button [matMenuTriggerFor]="tableMenu2" aria-label="Example icon-button with a menu">
-                    <mat-icon>more_vert</mat-icon>
-                  </button>
-                  <mat-menu #tableMenu2="matMenu">
-                    <button mat-menu-item>
-                      Удалить
-                    </button>
-                    <button mat-menu-item>
-                      Добавить строку сверху
-                    </button>
-                    <button mat-menu-item>
-                      Добавить строку снизу
-                    </button>
-                  </mat-menu>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <mat-form-field class="full-width" floatLabel="never">
-                  <textarea matInput cdkTextareaAutosize></textarea>
-                </mat-form-field>
-              </td>
-              <td>
-                <mat-form-field class="full-width" floatLabel="never">
-                  <textarea matInput cdkTextareaAutosize></textarea>
-                </mat-form-field>
-              </td>
-              <td>
-                <mat-form-field class="full-width" floatLabel="never">
-                  <textarea matInput cdkTextareaAutosize></textarea>
-                </mat-form-field>
-              </td>
-              <td>
-                <mat-form-field class="full-width" floatLabel="never">
-                  <textarea matInput cdkTextareaAutosize></textarea>
-                </mat-form-field>
-              </td>
-              <td class="custom-workform__table-td-sticky-right">
-                <div class="custom-workform__table-td-menu">
-                  <button mat-icon-button [matMenuTriggerFor]="tableMenu3" aria-label="Example icon-button with a menu">
-                    <mat-icon>more_vert</mat-icon>
-                  </button>
-                  <mat-menu #tableMenu3="matMenu">
-                    <button mat-menu-item>
-                      Удалить строку
-                    </button>
-                    <button mat-menu-item>
-                      Добавить строку сверху
-                    </button>
-                    <button mat-menu-item>
-                      Добавить строку снизу
-                    </button>
-                  </mat-menu>
-                </div>
-              </td>
-            </tr>
+        <div class="custom-workform__form-item" cdkDrag>
+          <mat-icon class="custom-workform__form-item-drag">drag_indicator</mat-icon>
+          <mat-form-field class="full-width custom-workform__form-input-title" floatLabel="never">
+            <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="1" placeholder="Введите заголовок ...">Сведения о технико-экономических показателях объекта капитального строительства</textarea>
+          </mat-form-field>
+          <mat-icon class="custom-workform__form-item-remove" matTooltip="Удалить блок">delete</mat-icon>
+        </div>
 
-            </tbody>
-          </table>
-        </ngx-simplebar>
+        <div class="custom-workform__form-item" cdkDrag>
+          <mat-icon class="custom-workform__form-item-drag">drag_indicator</mat-icon>
+
+          <div class="custom-workform__table-wrap">
+            <ngx-simplebar [options]="simplebarOptions">
+              <table class="custom-workform__table table table-hover">
+                <thead>
+                <tr>
+                  <td>
+                    <mat-form-field class="full-width" floatLabel="never">
+                      <textarea class="text-center" matInput cdkTextareaAutosize placeholder="Заголовок"></textarea>
+                    </mat-form-field>
+                  </td>
+                  <td>
+                    <mat-form-field class="full-width" floatLabel="never">
+                      <textarea matInput cdkTextareaAutosize placeholder="Заголовок"></textarea>
+                    </mat-form-field>
+                  </td>
+                  <td>
+                    <mat-form-field class="full-width" floatLabel="never">
+                      <textarea matInput cdkTextareaAutosize placeholder="Заголовок"></textarea>
+                    </mat-form-field>
+                  </td>
+                  <td>
+                    <mat-form-field class="full-width" floatLabel="never">
+                      <textarea matInput cdkTextareaAutosize placeholder="Заголовок"></textarea>
+                    </mat-form-field>
+                  </td>
+                  <td class="custom-workform__table-td-sticky-right"></td>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td>
+                    <mat-form-field class="full-width" floatLabel="never" appearance="outline">
+                      <textarea matInput cdkTextareaAutosize></textarea>
+                    </mat-form-field>
+                  </td>
+                  <td>
+                    <mat-form-field class="full-width" floatLabel="never" appearance="outline">
+                      <textarea matInput cdkTextareaAutosize></textarea>
+                    </mat-form-field>
+                  </td>
+                  <td>
+                    <mat-form-field class="full-width" floatLabel="never" appearance="outline">
+                      <textarea matInput cdkTextareaAutosize></textarea>
+                    </mat-form-field>
+                  </td>
+                  <td>
+                    <mat-form-field class="full-width" floatLabel="never" appearance="outline">
+                      <textarea matInput cdkTextareaAutosize></textarea>
+                    </mat-form-field>
+                  </td>
+                  <td class="custom-workform__table-td-sticky-right">
+                    <div class="custom-workform__table-td-menu">
+                      <button mat-icon-button [matMenuTriggerFor]="tableMenu1" aria-label="Example icon-button with a menu">
+                        <mat-icon>more_vert</mat-icon>
+                      </button>
+                      <mat-menu #tableMenu1="matMenu">
+                        <button mat-menu-item>
+                          Удалить строку
+                        </button>
+                        <button mat-menu-item>
+                          Добавить строку сверху
+                        </button>
+                        <button mat-menu-item>
+                          Добавить строку снизу
+                        </button>
+                      </mat-menu>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <mat-form-field class="full-width" floatLabel="never">
+                      <textarea matInput cdkTextareaAutosize></textarea>
+                    </mat-form-field>
+                  </td>
+                  <td>
+                    <mat-form-field class="full-width" floatLabel="never">
+                      <textarea matInput cdkTextareaAutosize></textarea>
+                    </mat-form-field>
+                  </td>
+                  <td>
+                    <mat-form-field class="full-width" floatLabel="never">
+                      <textarea matInput cdkTextareaAutosize></textarea>
+                    </mat-form-field>
+                  </td>
+                  <td>
+                    <mat-form-field class="full-width" floatLabel="never">
+                      <textarea matInput cdkTextareaAutosize></textarea>
+                    </mat-form-field>
+                  </td>
+                  <td class="custom-workform__table-td-sticky-right">
+                    <div class="custom-workform__table-td-menu">
+                      <button mat-icon-button [matMenuTriggerFor]="tableMenu2" aria-label="Example icon-button with a menu">
+                        <mat-icon>more_vert</mat-icon>
+                      </button>
+                      <mat-menu #tableMenu2="matMenu">
+                        <button mat-menu-item>
+                          Удалить
+                        </button>
+                        <button mat-menu-item>
+                          Добавить строку сверху
+                        </button>
+                        <button mat-menu-item>
+                          Добавить строку снизу
+                        </button>
+                      </mat-menu>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <mat-form-field class="full-width" floatLabel="never">
+                      <textarea matInput cdkTextareaAutosize></textarea>
+                    </mat-form-field>
+                  </td>
+                  <td>
+                    <mat-form-field class="full-width" floatLabel="never">
+                      <textarea matInput cdkTextareaAutosize></textarea>
+                    </mat-form-field>
+                  </td>
+                  <td>
+                    <mat-form-field class="full-width" floatLabel="never">
+                      <textarea matInput cdkTextareaAutosize></textarea>
+                    </mat-form-field>
+                  </td>
+                  <td>
+                    <mat-form-field class="full-width" floatLabel="never">
+                      <textarea matInput cdkTextareaAutosize></textarea>
+                    </mat-form-field>
+                  </td>
+                  <td class="custom-workform__table-td-sticky-right">
+                    <div class="custom-workform__table-td-menu">
+                      <button mat-icon-button [matMenuTriggerFor]="tableMenu3" aria-label="Example icon-button with a menu">
+                        <mat-icon>more_vert</mat-icon>
+                      </button>
+                      <mat-menu #tableMenu3="matMenu">
+                        <button mat-menu-item>
+                          Удалить строку
+                        </button>
+                        <button mat-menu-item>
+                          Добавить строку сверху
+                        </button>
+                        <button mat-menu-item>
+                          Добавить строку снизу
+                        </button>
+                      </mat-menu>
+                    </div>
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </ngx-simplebar>
+          </div>
+
+          <mat-icon class="custom-workform__form-item-remove" matTooltip="Удалить блок">delete</mat-icon>
+        </div>
+
+        <div class="custom-workform__form-item" cdkDrag>
+          <mat-icon class="custom-workform__form-item-drag">drag_indicator</mat-icon>
+          <mat-form-field class="full-width custom-workform__form-input-title" floatLabel="never">
+            <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="1" placeholder="Введите заголовок ..."></textarea>
+          </mat-form-field>
+          <mat-icon class="custom-workform__form-item-remove" matTooltip="Удалить блок">delete</mat-icon>
+        </div>
+
+        <div class="custom-workform__form-item" cdkDrag>
+          <mat-icon class="custom-workform__form-item-drag">drag_indicator</mat-icon>
+          <mat-form-field class="full-width custom-workform__form-input-text" appearance="outline">
+            <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="3" placeholder="Введите текст..."></textarea>
+          </mat-form-field>
+          <mat-icon class="custom-workform__form-item-remove" matTooltip="Удалить блок">delete</mat-icon>
+        </div>
+
+        <div class="custom-workform__form-item" cdkDrag>
+          <mat-icon class="custom-workform__form-item-drag">drag_indicator</mat-icon>
+          <mat-form-field class="full-width custom-workform__form-input-text" appearance="outline">
+            <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="3" placeholder="Введите текст..."></textarea>
+          </mat-form-field>
+          <mat-icon class="custom-workform__form-item-remove" matTooltip="Удалить блок">delete</mat-icon>
+        </div>
+
       </div>
 
-      <mat-icon class="custom-workform__form-item-remove">delete</mat-icon>
     </div>
 
+    <div class="custom-workform__footer">
+      <button mat-raised-button class="fs-13 text-green">Сохранить</button>
+    </div>
   </div>
-</div>
+</mat-card>
