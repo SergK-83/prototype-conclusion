@@ -29,6 +29,10 @@
         <div class="custom-workform__form-item" cdkDrag>
           <mat-icon class="custom-workform__form-item-drag">drag_indicator</mat-icon>
           <mat-form-field class="full-width custom-workform__form-input-text" appearance="outline">
+            <div class="custom-workform__form-input-text-menu">
+              <button mat-button><mat-icon>undo</mat-icon></button>
+              <button mat-button><mat-icon>redo</mat-icon></button>
+            </div>
             <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="3" placeholder="Введите текст...">Электроснабжение детского сада выполнено на основании технических условий от 05.12.2018 б/н для присоединения к электрическим сетям, выданных ООО «РСК Сибиряк» электроснабжение детского сада предусмотрено от существующего РУ-0,4 кВ трансформаторной подстанции ТП-5.</textarea>
           </mat-form-field>
           <mat-icon class="custom-workform__form-item-remove" matTooltip="Удалить блок">delete</mat-icon>
@@ -265,7 +269,8 @@
     </div>
 
     <div class="custom-workform__footer">
-      <button mat-raised-button class="fs-13 text-green">Сохранить</button>
+      <button mat-raised-button class="fs-13 text-green"><mat-icon>check</mat-icon> Завершить работу</button>
+      <button mat-raised-button class="fs-13">Сохранить</button>
     </div>
   </div>
 </mat-card>
