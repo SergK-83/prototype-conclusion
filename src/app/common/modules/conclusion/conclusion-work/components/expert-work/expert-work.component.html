@@ -2,11 +2,15 @@
   4.2.2.5. Сведения об инженерном оборудовании, о сетях инженерно-технического обеспечения, перечень инженерно-технических мероприятий, содержание технологических решений
 </div>
 
-<mat-card>
-  <div class="text-muted text-right m-b-10">
+<mat-card class="bg-light-grey">
+  <div class="m-b-10 text-muted">
     <div class="flex-box-inline align-items-center">
       <mat-icon class="m-r-10">access_time</mat-icon>
       Задача выполняется
+    </div>
+    <div class="flex-box-inline align-items-center" style="display: none">
+      <mat-icon class="m-r-10">check</mat-icon>
+      Задача завершена
     </div>
   </div>
   <div class="custom-workform">
@@ -27,6 +31,21 @@
         <div class="custom-workform__form-item" cdkDrag>
           <div class="drag-custom-placeholder" *cdkDragPlaceholder></div>
           <mat-icon class="custom-workform__form-item-drag">drag_indicator</mat-icon>
+          <mat-icon class="custom-workform__form-item-add" [matMenuTriggerFor]="workFormItemAdd1">add_circle_outline</mat-icon>
+          <mat-menu #workFormItemAdd1="matMenu">
+            <button mat-menu-item>
+              Создать заголовок
+            </button>
+            <button mat-menu-item>
+              Создать подзаголовок
+            </button>
+            <button mat-menu-item>
+              Создать текстовый блок
+            </button>
+            <button mat-menu-item>
+              Создать таблицу
+            </button>
+          </mat-menu>
           <mat-form-field class="full-width custom-workform__form-input-title" floatLabel="never">
             <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="1" placeholder="Введите заголовок ...">Подраздел «Система электроснабжения»</textarea>
           </mat-form-field>
@@ -36,6 +55,21 @@
         <div class="custom-workform__form-item" cdkDrag>
           <div class="drag-custom-placeholder" *cdkDragPlaceholder></div>
           <mat-icon class="custom-workform__form-item-drag" cdkDragHandle>drag_indicator</mat-icon>
+          <mat-icon class="custom-workform__form-item-add" [matMenuTriggerFor]="workFormItemAdd2">add_circle_outline</mat-icon>
+          <mat-menu #workFormItemAdd2="matMenu">
+            <button mat-menu-item>
+              Создать заголовок
+            </button>
+            <button mat-menu-item>
+              Создать подзаголовок
+            </button>
+            <button mat-menu-item>
+              Создать текстовый блок
+            </button>
+            <button mat-menu-item>
+              Создать таблицу
+            </button>
+          </mat-menu>
           <mat-form-field class="full-width custom-workform__form-input-text" appearance="outline">
             <div class="custom-workform__form-input-text-menu">
               <button mat-button><mat-icon>undo</mat-icon></button>
@@ -49,6 +83,21 @@
         <div class="custom-workform__form-item" cdkDrag>
           <div class="drag-custom-placeholder" *cdkDragPlaceholder></div>
           <mat-icon class="custom-workform__form-item-drag">drag_indicator</mat-icon>
+          <mat-icon class="custom-workform__form-item-add" [matMenuTriggerFor]="workFormItemAdd3">add_circle_outline</mat-icon>
+          <mat-menu #workFormItemAdd3="matMenu">
+            <button mat-menu-item>
+              Создать заголовок
+            </button>
+            <button mat-menu-item>
+              Создать подзаголовок
+            </button>
+            <button mat-menu-item>
+              Создать текстовый блок
+            </button>
+            <button mat-menu-item>
+              Создать таблицу
+            </button>
+          </mat-menu>
           <mat-form-field class="full-width custom-workform__form-input-text" appearance="outline">
             <div class="custom-workform__form-input-text-menu">
               <button mat-button><mat-icon>undo</mat-icon></button>
@@ -62,6 +111,21 @@
         <div class="custom-workform__form-item" cdkDrag>
           <div class="drag-custom-placeholder" *cdkDragPlaceholder></div>
           <mat-icon class="custom-workform__form-item-drag" cdkDragHandle>drag_indicator</mat-icon>
+          <mat-icon class="custom-workform__form-item-add" [matMenuTriggerFor]="workFormItemAdd4">add_circle_outline</mat-icon>
+          <mat-menu #workFormItemAdd4="matMenu">
+            <button mat-menu-item>
+              Создать заголовок
+            </button>
+            <button mat-menu-item>
+              Создать подзаголовок
+            </button>
+            <button mat-menu-item>
+              Создать текстовый блок
+            </button>
+            <button mat-menu-item>
+              Создать таблицу
+            </button>
+          </mat-menu>
           <mat-form-field class="full-width custom-workform__form-input-subtitle" floatLabel="never">
             <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="1" placeholder="Введите подзаголовок ...">Наружное освещение</textarea>
           </mat-form-field>
@@ -71,6 +135,21 @@
         <div class="custom-workform__form-item" cdkDrag>
           <div class="drag-custom-placeholder" *cdkDragPlaceholder></div>
           <mat-icon class="custom-workform__form-item-drag" cdkDragHandle>drag_indicator</mat-icon>
+          <mat-icon class="custom-workform__form-item-add" [matMenuTriggerFor]="workFormItemAdd5">add_circle_outline</mat-icon>
+          <mat-menu #workFormItemAdd5="matMenu">
+            <button mat-menu-item>
+              Создать заголовок
+            </button>
+            <button mat-menu-item>
+              Создать подзаголовок
+            </button>
+            <button mat-menu-item>
+              Создать текстовый блок
+            </button>
+            <button mat-menu-item>
+              Создать таблицу
+            </button>
+          </mat-menu>
           <mat-form-field class="full-width custom-workform__form-input-text" appearance="outline">
             <div class="custom-workform__form-input-text-menu">
               <button mat-button><mat-icon>undo</mat-icon></button>
@@ -84,6 +163,21 @@
         <div class="custom-workform__form-item" cdkDrag>
           <div class="drag-custom-placeholder" *cdkDragPlaceholder></div>
           <mat-icon class="custom-workform__form-item-drag" cdkDragHandle>drag_indicator</mat-icon>
+          <mat-icon class="custom-workform__form-item-add" [matMenuTriggerFor]="workFormItemAdd6">add_circle_outline</mat-icon>
+          <mat-menu #workFormItemAdd6="matMenu">
+            <button mat-menu-item>
+              Создать заголовок
+            </button>
+            <button mat-menu-item>
+              Создать подзаголовок
+            </button>
+            <button mat-menu-item>
+              Создать текстовый блок
+            </button>
+            <button mat-menu-item>
+              Создать таблицу
+            </button>
+          </mat-menu>
           <mat-form-field class="full-width custom-workform__form-input-text" appearance="outline">
             <div class="custom-workform__form-input-text-menu">
               <button mat-button><mat-icon>undo</mat-icon></button>
@@ -97,6 +191,21 @@
         <div class="custom-workform__form-item" cdkDrag>
           <div class="drag-custom-placeholder" *cdkDragPlaceholder></div>
           <mat-icon class="custom-workform__form-item-drag" cdkDragHandle>drag_indicator</mat-icon>
+          <mat-icon class="custom-workform__form-item-add" [matMenuTriggerFor]="workFormItemAdd7">add_circle_outline</mat-icon>
+          <mat-menu #workFormItemAdd7="matMenu">
+            <button mat-menu-item>
+              Создать заголовок
+            </button>
+            <button mat-menu-item>
+              Создать подзаголовок
+            </button>
+            <button mat-menu-item>
+              Создать текстовый блок
+            </button>
+            <button mat-menu-item>
+              Создать таблицу
+            </button>
+          </mat-menu>
           <mat-form-field class="full-width custom-workform__form-input-title" floatLabel="never">
             <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="1" placeholder="Введите заголовок ...">Сведения о технико-экономических показателях объекта капитального строительства</textarea>
           </mat-form-field>
@@ -106,7 +215,21 @@
         <div class="custom-workform__form-item" cdkDrag>
           <div class="drag-custom-placeholder" *cdkDragPlaceholder></div>
           <mat-icon class="custom-workform__form-item-drag" cdkDragHandle>drag_indicator</mat-icon>
-
+          <mat-icon class="custom-workform__form-item-add" [matMenuTriggerFor]="workFormItemAdd8">add_circle_outline</mat-icon>
+          <mat-menu #workFormItemAdd8="matMenu">
+            <button mat-menu-item>
+              Создать заголовок
+            </button>
+            <button mat-menu-item>
+              Создать подзаголовок
+            </button>
+            <button mat-menu-item>
+              Создать текстовый блок
+            </button>
+            <button mat-menu-item>
+              Создать таблицу
+            </button>
+          </mat-menu>
           <div class="custom-workform__table-wrap">
             <ngx-simplebar [options]="simplebarOptions">
               <table class="custom-workform__table table table-hover">
@@ -269,6 +392,21 @@
         <div class="custom-workform__form-item" cdkDrag>
           <div class="drag-custom-placeholder" *cdkDragPlaceholder></div>
           <mat-icon class="custom-workform__form-item-drag" cdkDragHandle>drag_indicator</mat-icon>
+          <mat-icon class="custom-workform__form-item-add" [matMenuTriggerFor]="workFormItemAdd9">add_circle_outline</mat-icon>
+          <mat-menu #workFormItemAdd9="matMenu">
+            <button mat-menu-item>
+              Создать заголовок
+            </button>
+            <button mat-menu-item>
+              Создать подзаголовок
+            </button>
+            <button mat-menu-item>
+              Создать текстовый блок
+            </button>
+            <button mat-menu-item>
+              Создать таблицу
+            </button>
+          </mat-menu>
           <mat-form-field class="full-width custom-workform__form-input-title" floatLabel="never">
             <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="1" placeholder="Введите заголовок ..."></textarea>
           </mat-form-field>
@@ -278,6 +416,21 @@
         <div class="custom-workform__form-item" cdkDrag>
           <div class="drag-custom-placeholder" *cdkDragPlaceholder></div>
           <mat-icon class="custom-workform__form-item-drag" cdkDragHandle>drag_indicator</mat-icon>
+          <mat-icon class="custom-workform__form-item-add" [matMenuTriggerFor]="workFormItemAdd10">add_circle_outline</mat-icon>
+          <mat-menu #workFormItemAdd10="matMenu">
+            <button mat-menu-item>
+              Создать заголовок
+            </button>
+            <button mat-menu-item>
+              Создать подзаголовок
+            </button>
+            <button mat-menu-item>
+              Создать текстовый блок
+            </button>
+            <button mat-menu-item>
+              Создать таблицу
+            </button>
+          </mat-menu>
           <mat-form-field class="full-width custom-workform__form-input-text" appearance="outline">
             <div class="custom-workform__form-input-text-menu">
               <button mat-button><mat-icon>undo</mat-icon></button>
@@ -291,6 +444,21 @@
         <div class="custom-workform__form-item" cdkDrag>
           <div class="drag-custom-placeholder" *cdkDragPlaceholder></div>
           <mat-icon class="custom-workform__form-item-drag" cdkDragHandle>drag_indicator</mat-icon>
+          <mat-icon class="custom-workform__form-item-add" [matMenuTriggerFor]="workFormItemAdd11">add_circle_outline</mat-icon>
+          <mat-menu #workFormItemAdd11="matMenu">
+            <button mat-menu-item>
+              Создать заголовок
+            </button>
+            <button mat-menu-item>
+              Создать подзаголовок
+            </button>
+            <button mat-menu-item>
+              Создать текстовый блок
+            </button>
+            <button mat-menu-item>
+              Создать таблицу
+            </button>
+          </mat-menu>
           <mat-form-field class="full-width custom-workform__form-input-text" appearance="outline">
             <div class="custom-workform__form-input-text-menu">
               <button mat-button><mat-icon>undo</mat-icon></button>
@@ -306,7 +474,7 @@
     </div>
 
     <div class="custom-workform__footer">
-      <button mat-raised-button class="fs-13 text-green" matTooltip="После завершения редактирование будет недоступно"><mat-icon>check</mat-icon> Завершить задачу</button>
+      <button mat-raised-button class="fs-13 text-green" matTooltip="После завершения редактирование будет недоступно">Завершить задачу</button>
       <button mat-raised-button class="fs-13">Сохранить</button>
     </div>
   </div>

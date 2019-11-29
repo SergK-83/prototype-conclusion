@@ -46,6 +46,10 @@ a:hover, a:focus {
   color: #24b918;
 }
 
+.bg-light-grey {
+  background-color: #f8f8f8;
+}
+
 .fw-400 {
   font-weight: 400;
 }
@@ -339,6 +343,7 @@ custom-workspace
 
 .custom-workform {
   position: relative;
+  background-color: #fff;
 }
 
 .custom-workform__header {
@@ -388,7 +393,7 @@ custom-workspace
 
 .custom-workform__form-item {
   position: relative;
-  padding: 5px 40px 5px 34px;
+  padding: 5px 40px;
 
   .mat-form-field-outline {
     background-color: #fff;
@@ -439,26 +444,35 @@ custom-workspace
 }
 
 .custom-workform__form-item-drag,
+.custom-workform__form-item-add,
 .custom-workform__form-item-remove {
   width: 19px !important;
   position: absolute;
-  top: 15px;
   color: #a1a1a1;
   font-size: 19px;
   opacity: 0;
 }
 
 .custom-workform__form-item:hover .custom-workform__form-item-drag,
+.custom-workform__form-item:hover .custom-workform__form-item-add,
 .custom-workform__form-item:hover .custom-workform__form-item-remove {
   opacity: 1;
 }
 
 .custom-workform__form-item-drag {
+  top: 10px;
   left: 8px;
   cursor: grab;
 }
 
+.custom-workform__form-item-add {
+  left: 8px;
+  bottom: 1px;
+  cursor: pointer;
+}
+
 .custom-workform__form-item-remove {
+  top: 15px;
   right: 10px;
   color: #a1a1a1;
   cursor: pointer;

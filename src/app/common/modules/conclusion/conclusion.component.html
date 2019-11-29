@@ -6,7 +6,9 @@
     <mat-card-title class="main-card__header-title text-muted">Заключение</mat-card-title>
 
     <div class="main-card__header-tools">
-      <button mat-raised-button class="text-muted" matTooltip="Применить ранее созданое заключение"><mat-icon>add</mat-icon> Готовые заключения</button>
+      <button mat-raised-button class="text-muted" matTooltip="Применить ранее созданое заключение" (click)="openDialogConclusionList()">
+        <mat-icon>add</mat-icon> Готовые заключения
+      </button>
     </div>
 
   </mat-card-header>
