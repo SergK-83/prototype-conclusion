@@ -22,7 +22,7 @@ export class ConclusionComponent implements OnInit {
 
   openDialogConclusionList(): void {
     const dialogRef = this.dialog.open(DialogConclusionListComponent, {
-      width: '250px'
+
     });
 
     dialogRef.afterClosed().subscribe(result => {

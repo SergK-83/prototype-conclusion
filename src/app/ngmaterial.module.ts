@@ -35,7 +35,8 @@ import { MatListModule } from '@angular/material/list';
     MatTooltipModule,
     MatTableModule,
     MatMenuModule,
-    MatDialogModule
+    MatDialogModule,
+    MatListModule
   ]
 })
 export class MaterialAppModule { }

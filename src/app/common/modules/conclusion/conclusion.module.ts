@@ -12,6 +12,7 @@ import {ConclusionPrintingFormComponent} from './conclusion-printing-form/conclu
 import {ConclusionWorkComponent} from './conclusion-work/conclusion-work.component';
 import {ConclusionComponent} from './conclusion.component';
 import {components} from './conclusion-work/components';
+import {DialogConclusionListComponent} from './conclusion-work/components/dialogs/dialog-conclusion-list.component';
 
 const routes: Routes = [
   {
@@ -55,5 +56,8 @@ const routes: Routes = [
 
     components,
   ],
+  entryComponents: [
+    DialogConclusionListComponent
+  ]
 })
 export  class ConclusionModule {}
