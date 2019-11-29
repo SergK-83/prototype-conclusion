@@ -1,10 +1,14 @@
 <mat-card class="main-card">
-  <mat-card-header>
+  <mat-card-header class="main-card__header">
     <div mat-card-avatar>
       <mat-icon class="text-light">verified_user</mat-icon>
     </div>
-    <mat-card-title class="text-muted">Заключение</mat-card-title>
-    <button mat-button class="fs-13 ml-auto"><mat-icon>save_alt</mat-icon> Загрузить готовое заключение</button>
+    <mat-card-title class="main-card__header-title text-muted">Заключение</mat-card-title>
+
+    <div class="main-card__header-tools">
+      <button mat-raised-button class="text-muted" matTooltip="Применить ранее созданое заключение"><mat-icon>add</mat-icon> Готовые заключения</button>
+    </div>
+
   </mat-card-header>
   <mat-divider></mat-divider>
   <mat-card-content class="m-t-20">

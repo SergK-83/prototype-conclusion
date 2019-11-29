@@ -3,6 +3,12 @@
 </div>
 
 <mat-card>
+  <div class="text-muted text-right m-b-10">
+    <div class="flex-box-inline align-items-center">
+      <mat-icon class="m-r-10">access_time</mat-icon>
+      Задача выполняется
+    </div>
+  </div>
   <div class="custom-workform">
     <div class="custom-workform__header">
       <div class="custom-workform__header-tools">
@@ -11,7 +17,7 @@
         <button mat-stroked-button matTooltip="Создать текстовый блок">Текст</button>
         <button mat-stroked-button matTooltip="Создать таблицу">Таблица</button>
       </div>
-      <button mat-button color="primary" class="fs-13"><mat-icon>playlist_add</mat-icon> Список заключений</button>
+      <button mat-button color="primary" class="fs-13" matTooltip="Загрузить текст из существующих заключений"><mat-icon>playlist_add</mat-icon> Загрузить из готовых заключений</button>
     </div>
 
     <div class="custom-workform__form">
@@ -300,7 +306,7 @@
     </div>
 
     <div class="custom-workform__footer">
-      <button mat-raised-button class="fs-13 text-green"><mat-icon>check</mat-icon> Завершить работу</button>
+      <button mat-raised-button class="fs-13 text-green" matTooltip="После завершения редактирование будет недоступно"><mat-icon>check</mat-icon> Завершить задачу</button>
       <button mat-raised-button class="fs-13">Сохранить</button>
     </div>
   </div>

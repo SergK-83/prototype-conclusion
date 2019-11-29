@@ -18,6 +18,14 @@ a:hover, a:focus {
   margin-left: auto !important;
 }
 
+.m-r-10 {
+  margin-right: 10px;
+}
+
+.m-b-10 {
+  margin-bottom: 10px !important;
+}
+
 .m-b-20 {
   margin-bottom: 20px !important;
 }
@@ -68,14 +76,6 @@ hr.hr-dashed {
 
 .mat-checkbox-layout {
   margin-bottom: 0;
-}
-
-.main-card {
-  .mat-card-header .mat-card-title {
-    font-size: 19px;
-    font-weight: 100;
-    text-transform: uppercase;
-  }
 }
 
 .container-maxwidth-1400, .maxwidth-1400px {
@@ -146,6 +146,35 @@ hr.hr-dashed {
 
 /*
 =========================================
+main-card
+=========================================
+*/
+
+.main-card__header {
+  padding-bottom: 10px;
+}
+
+.main-card__header-title {
+  font-size: 19px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.main-card__header-tools {
+  margin-left: auto;
+
+  .mat-button-wrapper {
+    font-size: 13px;
+  }
+
+  .mat-icon {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+/*
+=========================================
 mat-menu
 =========================================
 */
@@ -166,8 +195,16 @@ flex-box
   display: flex;
 }
 
+.flex-box-inline {
+  display: inline-flex;
+}
+
 .justify-content-between {
   justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
 }
 
 /*
