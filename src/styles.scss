@@ -307,11 +307,120 @@ block-view
 
 /*
 =========================================
+custom-tree
+=========================================
+*/
+
+.custom-tree {
+  list-style: none;
+  padding-left: 0;
+  background: rgba(0,0,0,.03);
+
+  ul {
+    list-style: none;
+  }
+}
+
+.custom-tree__node_main {
+  border-top: 1px solid #ddd;
+}
+
+.custom-tree__node-body {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px 3px;
+  font-weight: 400;
+  font-size: 12px;
+
+  .mat-icon-button {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .mat-icon-button:hover .mat-button-focus-overlay {
+    opacity: 0;
+  }
+
+  .material-icons {
+    font-size: 16px;
+  }
+
+  textarea.mat-input-element {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.custom-tree__node-add .mat-icon {
+  transition: .2s ease-in;
+}
+
+.custom-tree__node-name {
+  flex-grow: 1;
+  padding: 8px 5px 0;
+  cursor: pointer;
+}
+
+.custom-tree__node-name-edit {
+  display: flex;
+  align-items: flex-start;
+}
+
+.custom-tree__node-name-input {
+  flex-grow: 1;
+  padding-left: 3px;
+  margin-top: -5px;
+
+  .mat-form-field-infix {
+    border-top-width: 0;
+  }
+}
+
+.custom-tree__node-name,
+.custom-tree__node-name-input {
+  line-height: 1.4;
+}
+
+.custom-tree__node-number {
+  vertical-align: top;
+}
+
+.custom-tree__node-tools {
+  display: flex;
+
+  .mat-button {
+    min-width: auto;
+    padding: 0 5px;
+  }
+}
+
+.custom-tree__sub-list {
+  padding-left: 20px;
+}
+
+.custom-tree__sub-list {
+  display: none;
+}
+
+.custom-tree__node_expanded {
+  .custom-tree__sub-list {
+    display: block;
+  }
+
+  >.custom-tree__node-body .custom-tree__node-add .mat-icon {
+    transform: rotate(90deg);
+    transition: .2s ease-in;
+  }
+}
+
+/*
+=========================================
 form
 =========================================
 */
 
-label {
+.block-view__content label {
   font-size: 13px;
   font-weight: 400;
   color: rgba(0,0,0,.6);
@@ -497,7 +606,7 @@ custom-workspace
 
 .custom-workform__form-input-text {
   font-size: 14px;
-  line-height: 1.3;
+  line-height: 1.6;
   font-weight: 100;
 
   textarea {
