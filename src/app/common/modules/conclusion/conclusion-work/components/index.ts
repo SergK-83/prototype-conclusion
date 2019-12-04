@@ -3,11 +3,13 @@ import {DeclarantDeveloperCustomerInfoComponent} from './declarant-developer-cus
 import {GroundsForExpertiseComponent} from './grounds-for-expertise/grounds-for-expertise.component';
 import {ExpertWorkComponent} from './expert-work/expert-work.component';
 import {DialogConclusionListComponent} from './dialogs/dialog-conclusion-list.component';
+import {CustomTreeNodeComponent} from './custom-tree-node/custom-tree-node.component';
 
 export const components = [
   DeclarationInfoComponent,
   DeclarantDeveloperCustomerInfoComponent,
   GroundsForExpertiseComponent,
   ExpertWorkComponent,
-  DialogConclusionListComponent
+  DialogConclusionListComponent,
+  CustomTreeNodeComponent
 ];
