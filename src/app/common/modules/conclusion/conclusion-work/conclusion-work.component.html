@@ -4,6 +4,33 @@
       <div class="block-view__nav-content">
 
         <ul class="custom-tree">
+
+          <ng-container
+            *ngFor="let node of treeNodes"
+            [ngTemplateOutlet]="childNodesTemplate"
+            [ngTemplateOutletContext]="{ node: node }"
+          ></ng-container>
+
+          <ng-template #childNodesTemplate let-node="node">
+
+            <custom-tree-node
+              [node]="node"
+              (createChildNode)="createChildNode(node)"
+            >
+
+              <ng-container *ngIf="node.childList?.length">
+
+                HELLO
+
+              </ng-container>
+
+            </custom-tree-node>
+
+          </ng-template>
+
+        </ul>
+
+        <ul class="custom-tree" style="display: none">
           <ng-container *ngFor="let node of treeNodes">
 
             <ng-container *ngIf="node.childList?.length">
@@ -159,8 +186,6 @@
 
           </ng-container>
         </ul>
-
-
 
         <ul class="custom-tree" style="display: none">
 

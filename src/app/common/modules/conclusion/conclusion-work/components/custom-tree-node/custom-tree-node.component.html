@@ -1,0 +1,89 @@
+<li class="custom-tree__node"
+    [ngClass]="{ 'custom-tree__node_main': treeLevel === 1, 'custom-tree__node_expanded': node.isExpanded }"
+>
+  <div class="custom-tree__node-body">
+
+    <ng-container *ngIf="!node.editMode">
+
+      <button mat-button class="custom-tree__node-toggle mat-icon-button" [matMenuTriggerFor]="customTreeNodeMenu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #customTreeNodeMenu="matMenu">
+        <button mat-menu-item (click)="node.editMode = true">
+          Редактировать
+        </button>
+        <button mat-menu-item>
+          Новый пункт
+        </button>
+        <button mat-menu-item (click)="createChildNode.emit()">
+          Новый вложенный пункт
+        </button>
+        <button mat-menu-item>
+          Удалить
+        </button>
+      </mat-menu>
+
+      <div class="custom-tree__node-name">
+        <span class="custom-tree__node-number">{{node.id}}</span>
+        {{node.name}}
+      </div>
+
+      <button
+        mat-button
+        class="custom-tree__node-add mat-icon-button"
+        (click)="node.isExpanded=!node.isExpanded"
+        [disabled]="!node.childList?.length"
+      >
+        <mat-icon *ngIf="node.childList?.length">chevron_right</mat-icon>
+      </button>
+
+    </ng-container>
+
+    <ng-container *ngIf="node.editMode">
+
+      <button mat-button class="custom-tree__node-toggle mat-icon-button" [matMenuTriggerFor]="customTreeNodeMenu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #customTreeNodeMenu="matMenu">
+        <button mat-menu-item>
+          Новый пункт
+        </button>
+        <button mat-menu-item>
+          Новый вложенный пункт
+        </button>
+        <button mat-menu-item>
+          Удалить
+        </button>
+      </mat-menu>
+
+      <div class="custom-tree__node-name custom-tree__node-name-edit">
+        <span class="custom-tree__node-number">{{node.id}}</span>
+        <mat-form-field class="custom-tree__node-name-input" floatLabel="never">
+          <textarea
+            matInput
+            cdkTextareaAutosize
+            cdkAutosizeMinRows="1"
+            placeholder="Новый пункт..."
+            autofocus
+            name="nodeName"
+            [(ngModel)]="node.name"
+          ></textarea>
+        </mat-form-field>
+      </div>
+
+      <div class="custom-tree__node-tools">
+        <button
+          mat-button
+          matTooltip="Сохранить"
+          matTooltipPosition="top"
+          (click)="saveNode()"
+        >
+          <mat-icon class="text-green">done</mat-icon>
+        </button>
+      </div>
+
+    </ng-container>
+
+  </div>
+
+</li>
