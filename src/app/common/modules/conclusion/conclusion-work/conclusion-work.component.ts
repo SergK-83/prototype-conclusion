@@ -116,5 +116,17 @@ export class ConclusionWorkComponent implements OnInit {
 
     node.isExpanded = true;
   }
+
+  removeNode(nodeList: NodeItem[], node: NodeItem){
+
+    const nodeIndex = nodeList.indexOf(node);
+
+    console.log(nodeIndex);
+
+    nodeList.splice(nodeIndex, 1);
+
+    console.log(nodeList);
+
+  }
 }
 

@@ -17,6 +17,7 @@
               [node]="node"
               (createChildNode)="createChildNode(node)"
               (createNode)="createNode(nodeList, node)"
+              (removeNode)="removeNode(nodeList, node)"
             >
 
               <ng-container *ngIf="node.childList?.length">

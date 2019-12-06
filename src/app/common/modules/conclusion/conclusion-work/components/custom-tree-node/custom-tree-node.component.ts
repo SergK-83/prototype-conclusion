@@ -14,6 +14,8 @@ export class CustomTreeNodeComponent {
 
   @Output() createChildNode = new EventEmitter();
 
+  @Output() removeNode = new EventEmitter();
+
   get treeLevel(): number {
     if (!this.node) {
       return 1;

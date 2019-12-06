@@ -18,7 +18,7 @@
         <button *ngIf="node.level<5" mat-menu-item (click)="createChildNode.emit()">
           Новый вложенный пункт
         </button>
-        <button mat-menu-item>
+        <button mat-menu-item (click)="removeNode.emit()">
           Удалить
         </button>
       </mat-menu>
@@ -45,7 +45,7 @@
         <mat-icon>more_vert</mat-icon>
       </button>
       <mat-menu #customTreeNodeMenu="matMenu">
-        <button mat-menu-item>
+        <button mat-menu-item (click)="removeNode.emit()">
           Удалить
         </button>
       </mat-menu>
