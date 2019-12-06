@@ -5,17 +5,17 @@
 
     <ng-container *ngIf="!node.editMode">
 
-      <button mat-button class="custom-tree__node-toggle mat-icon-button" [matMenuTriggerFor]="customTreeNodeMenu">
+      <button mat-button class="mat-icon-button" [matMenuTriggerFor]="customTreeNodeMenu">
         <mat-icon>more_vert</mat-icon>
       </button>
       <mat-menu #customTreeNodeMenu="matMenu">
         <button mat-menu-item (click)="node.editMode = true">
           Редактировать
         </button>
-        <button mat-menu-item>
+        <button mat-menu-item (click)="createNode.emit()">
           Новый пункт
         </button>
-        <button mat-menu-item (click)="createChildNode.emit()">
+        <button *ngIf="node.level<5" mat-menu-item (click)="createChildNode.emit()">
           Новый вложенный пункт
         </button>
         <button mat-menu-item>
@@ -24,13 +24,13 @@
       </mat-menu>
 
       <div class="custom-tree__node-name">
-        <span class="custom-tree__node-number">{{node.id}}</span>
+        <span class="custom-tree__node-number">{{node.id}}.</span>
         {{node.name}}
       </div>
 
       <button
         mat-button
-        class="custom-tree__node-add mat-icon-button"
+        class="custom-tree__node-toggle mat-icon-button"
         (click)="node.isExpanded=!node.isExpanded"
         [disabled]="!node.childList?.length"
       >
@@ -41,23 +41,17 @@
 
     <ng-container *ngIf="node.editMode">
 
-      <button mat-button class="custom-tree__node-toggle mat-icon-button" [matMenuTriggerFor]="customTreeNodeMenu">
+      <button mat-button class="mat-icon-button" [matMenuTriggerFor]="customTreeNodeMenu">
         <mat-icon>more_vert</mat-icon>
       </button>
       <mat-menu #customTreeNodeMenu="matMenu">
-        <button mat-menu-item>
-          Новый пункт
-        </button>
-        <button mat-menu-item>
-          Новый вложенный пункт
-        </button>
         <button mat-menu-item>
           Удалить
         </button>
       </mat-menu>
 
       <div class="custom-tree__node-name custom-tree__node-name-edit">
-        <span class="custom-tree__node-number">{{node.id}}</span>
+        <span class="custom-tree__node-number">{{node.id}}.</span>
         <mat-form-field class="custom-tree__node-name-input" floatLabel="never">
           <textarea
             matInput
@@ -75,7 +69,7 @@
         <button
           mat-button
           matTooltip="Сохранить"
-          matTooltipPosition="top"
+          matTooltipPosition="above"
           (click)="saveNode()"
         >
           <mat-icon class="text-green">done</mat-icon>
@@ -85,5 +79,7 @@
     </ng-container>
 
   </div>
+
+  <ng-content></ng-content>
 
 </li>

@@ -8,6 +8,10 @@ export class CustomTreeNodeComponent {
 
   @Input() node: NodeItem;
 
+  @Input() nodeList: NodeItem[];
+
+  @Output() createNode = new EventEmitter();
+
   @Output() createChildNode = new EventEmitter();
 
   get treeLevel(): number {

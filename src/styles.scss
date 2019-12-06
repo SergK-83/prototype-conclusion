@@ -224,24 +224,24 @@ block-view
 .block-view__aside {
   position: relative;
   padding-right: 48px;
-  flex: 0 0 380px;
-  max-width: 380px;
+  flex: 0 0 450px;
+  max-width: 450px;
 }
 
 .block-view__nav {
   position: sticky;
   top: 10px;
-}
+  border-top: 1px solid #ddd;
+  background: rgba(0,0,0,.03);
 
-.block-view__nav-content {
-  .mat-tree {
-    background: rgba(0,0,0,.03);
+  ngx-simplebar {
+    max-height: 65vh;
+    overflow: auto;
   }
 }
 
 .block-view__content {
-  flex: 0 0 calc(100% - 380px);
-  max-width: calc(100% - 380px);
+  flex-grow: 1;
 }
 
 .block-view__content-header {
@@ -251,41 +251,6 @@ block-view
   font-weight: 300;
   line-height: 1.3;
   border-bottom: 2px solid #ccc;
-}
-
-.mat-nested-tree-node, .mat-tree-node {
-  padding: 10px 0;
-  font-weight: 400;
-  font-size: 12px;
-
-  .material-icons {
-    font-size: 16px;
-  }
-}
-
-.mat-tree-node[role="group"] {
-  border-top: 1px solid #ddd;
-
-  .mat-checkbox-layout .mat-checkbox-label {
-    font-weight: 400;
-  }
-}
-
-.mat-tree-node:not([role="group"]) {
-  padding-left: 15px !important;
-  padding-right: 10px;
-  color: rgba(0,0,0,.65);
-
-  .mat-checkbox-layout .mat-checkbox-label {
-    font-weight: 400;
-  }
-}
-
-.mat-tree-node__tools {
-  .mat-button {
-    min-width: auto;
-    padding: 0 5px;
-  }
 }
 
 .mat-expansion-panel-header-title {
@@ -312,12 +277,18 @@ custom-tree
 */
 
 .custom-tree {
+  margin-bottom: 0;
   list-style: none;
   padding-left: 0;
-  background: rgba(0,0,0,.03);
 
   ul {
     list-style: none;
+  }
+}
+
+.block-view__nav {
+  .custom-tree {
+    margin-top: -1px;
   }
 }
 
@@ -328,7 +299,7 @@ custom-tree
 .custom-tree__node-body {
   display: flex;
   align-items: flex-start;
-  padding: 10px 3px;
+  padding: 10px 10px 10px 5px;
   font-weight: 400;
   font-size: 12px;
 
@@ -404,11 +375,11 @@ custom-tree
 }
 
 .custom-tree__node_expanded {
-  .custom-tree__sub-list {
+  >.custom-tree__sub-list {
     display: block;
   }
 
-  >.custom-tree__node-body .custom-tree__node-add .mat-icon {
+  >.custom-tree__node-body .custom-tree__node-toggle .mat-icon {
     transform: rotate(90deg);
     transition: .2s ease-in;
   }
