@@ -3,6 +3,7 @@ declare interface NodeItem {
   name: string;
   childList: NodeItem[];
   level: number;
+  isNewNode: boolean;
   editMode?: boolean;
   isExpanded?: boolean;
 }

@@ -26,6 +26,11 @@ export class CustomTreeNodeComponent {
 
   saveNode() {
     this.node.editMode = false;
+    this.node.isNewNode = false;
+  }
+
+  cancelEditNode() {
+    this.node.editMode = false;
   }
 
 }

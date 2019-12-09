@@ -359,10 +359,16 @@ custom-tree
 
 .custom-tree__node-tools {
   display: flex;
+  flex-direction: column;
 
   .mat-button {
     min-width: auto;
     padding: 0 5px;
+    line-height: 25px;
+  }
+
+  .mat-icon {
+    height: 18px;
   }
 }
 

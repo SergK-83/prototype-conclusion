@@ -58,7 +58,7 @@
             cdkTextareaAutosize
             cdkAutosizeMinRows="1"
             placeholder="Новый пункт..."
-            autofocus
+            cdkFocusInitial
             name="nodeName"
             [(ngModel)]="node.name"
           ></textarea>
@@ -73,6 +73,14 @@
           (click)="saveNode()"
         >
           <mat-icon class="text-green">done</mat-icon>
+        </button>
+        <button
+          mat-button
+          matTooltip="Отмена"
+          matTooltipPosition="above"
+          (click)="node.isNewNode ? removeNode.emit() : cancelEditNode()"
+        >
+          <mat-icon class="text-muted">clear</mat-icon>
         </button>
       </div>
 

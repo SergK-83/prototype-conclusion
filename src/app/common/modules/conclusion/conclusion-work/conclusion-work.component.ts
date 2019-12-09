@@ -18,22 +18,26 @@ export class ConclusionWorkComponent implements OnInit {
           id: '1.1',
           name: 'Сведения об организации по проведению экспертизы',
           childList: [],
-          level: 2
+          level: 2,
+          isNewNode: false
         },
         {
           id: '1.2',
           name: 'Сведения о заявителе, застройщике, техническом заказчике',
           childList: [],
-          level: 2
+          level: 2,
+          isNewNode: false
         },
         {
           id: '1.3',
           name: 'Основания для проведения экспертизы',
           childList: [],
-          level: 2
+          level: 2,
+          isNewNode: false
         }
       ],
-      level: 1
+      level: 1,
+      isNewNode: false
     },
     {
       id: '4',
@@ -47,43 +51,51 @@ export class ConclusionWorkComponent implements OnInit {
               id: '4.1.1',
               name: 'Состав отчетных материалов о результатах инженерных изысканий',
               childList: [],
-              level: 3
+              level: 3,
+              isNewNode: false
             },
             {
               id: '4.1.2',
               name: 'Сведения о методах выполнения инженерных изысканий',
               childList: [],
-              level: 3
+              level: 3,
+              isNewNode: false
             },
             {
               id: '4.1.3',
               name: 'Инженерно-геодезические изыскания',
               childList: [],
-              level: 3
+              level: 3,
+              isNewNode: false
             }
           ],
-          level: 2
+          level: 2,
+          isNewNode: false
         },
         {
           id: '4.2',
           name: 'Сведения о заявителе, застройщике, техническом заказчике',
           childList: [],
-          level: 2
+          level: 2,
+          isNewNode: false
         },
         {
           id: '4.3',
           name: 'Основания для проведения экспертизы',
           childList: [],
-          level: 2
+          level: 2,
+          isNewNode: false
         }
       ],
-      level: 1
+      level: 1,
+      isNewNode: false
     },
     {
       id: '5',
       name: 'Раздел без вложенных пунктов',
       childList: [],
-      level: 1
+      level: 1,
+      isNewNode: false
     }
   ];
 
@@ -93,15 +105,13 @@ export class ConclusionWorkComponent implements OnInit {
   createNode(nodeList: NodeItem[], node: NodeItem) {
 
     nodeList.push({
-      id: node.id,
+      id: `${node.id}.${nodeList.length +1}`,
       name: null,
       childList: [],
       level: node.level,
+      isNewNode: true,
       editMode: true,
     });
-
-    console.log(nodeList);
-
   }
 
   createChildNode(node: NodeItem) {
@@ -111,6 +121,7 @@ export class ConclusionWorkComponent implements OnInit {
       name: null,
       childList: [],
       level: node.level + 1,
+      isNewNode: true,
       editMode: true,
     });
 
@@ -121,12 +132,7 @@ export class ConclusionWorkComponent implements OnInit {
 
     const nodeIndex = nodeList.indexOf(node);
 
-    console.log(nodeIndex);
-
     nodeList.splice(nodeIndex, 1);
-
-    console.log(nodeList);
-
   }
 }
 
