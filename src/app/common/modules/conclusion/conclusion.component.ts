@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
-import {DialogConclusionListComponent} from './conclusion-work/components/dialogs/dialog-conclusion-list.component';
+import {DialogConclusionListComponent} from './conclusion-work/components/dialogs/dialog-conclusion-list/dialog-conclusion-list.component';
+import {DialogConclusionTemplatesComponent} from './conclusion-work/components/dialogs/dialog-conclusion-templates/dialog-conclusion-templates.component';
 
 @Component({
   selector: 'conclusion',
@@ -15,13 +16,10 @@ export class ConclusionComponent implements OnInit {
     ];
   activeLink = this.links[0];
 
-  animal: string;
-  name: string;
-
   constructor(public dialog: MatDialog) {}
 
-  openDialogConclusionList(): void {
-    const dialogRef = this.dialog.open(DialogConclusionListComponent, {
+  openDialogConclusionTemplates(): void {
+    const dialogRef = this.dialog.open(DialogConclusionTemplatesComponent, {
 
     });
 

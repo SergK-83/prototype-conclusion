@@ -346,14 +346,51 @@ export class ConclusionWorkComponent implements OnInit {
               level: 3,
               isNewNode: false
             },
+            {
+              id: '4.2.3',
+              name: 'Сведения об оперативных изменениях, внесенных заявителем в рассматриваемые разделы проектной документации в процессе проведения экспертизы',
+              childList: [],
+              level: 3,
+              isNewNode: false
+            }
           ],
           level: 2,
           isNewNode: false
         },
+      ],
+      level: 1,
+      isNewNode: false
+    },
+    {
+      id: '5',
+      name: 'Выводы по результатам рассмотрения',
+      childList: [
         {
-          id: '4.3',
-          name: 'Основания для проведения экспертизы',
+          id: '5.1',
+          name: 'Выводы о соответствии или несоответствии результатов инженерных изысканий требованиям технических регламентов',
           childList: [],
+          level: 2,
+          isNewNode: false
+        },
+        {
+          id: '5.2',
+          name: 'Выводы в отношении технической части проектной документации',
+          childList: [
+            {
+              id: '5.2.1',
+              name: 'Указания на результаты инженерных изысканий, на соответствие которым проводилась оценка проектной документации',
+              childList: [],
+              level: 3,
+              isNewNode: false
+            },
+            {
+              id: '5.2.2',
+              name: 'Выводы о соответствии или несоответствии технической части проектной документации результатам инженерных изысканий и требованиям технических регламентов',
+              childList: [],
+              level: 3,
+              isNewNode: false
+            }
+          ],
           level: 2,
           isNewNode: false
         }
@@ -362,8 +399,15 @@ export class ConclusionWorkComponent implements OnInit {
       isNewNode: false
     },
     {
-      id: '5',
-      name: 'Раздел без вложенных пунктов',
+      id: '6',
+      name: 'Общие выводы',
+      childList: [],
+      level: 1,
+      isNewNode: false
+    },
+    {
+      id: '7',
+      name: 'Сведения о лицах, аттестованных на право подготовки заключений экспертизы, подписавших заключение экспертизы ',
       childList: [],
       level: 1,
       isNewNode: false

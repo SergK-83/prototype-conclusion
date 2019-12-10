@@ -1,5 +1,4 @@
 import {ChangeDetectionStrategy, Component} from '@angular/core';
-import {MatListModule} from '@angular/material/list';
 
 export interface Section {
   objectName: string;

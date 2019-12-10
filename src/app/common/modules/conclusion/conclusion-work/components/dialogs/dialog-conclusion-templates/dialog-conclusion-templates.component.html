@@ -1,0 +1,20 @@
+<h3 mat-subheader>Шаблоны заключений</h3>
+
+<label>Выберите шаблон заключения</label>
+
+<mat-radio-group
+  [(ngModel)]="conclusionTemplateSelected">
+
+  <mat-list>
+    <mat-divider></mat-divider>
+    <mat-list-item *ngFor="let conclusionTemplate of conclusionTemplates">
+      <mat-divider></mat-divider>
+      <mat-radio-button [value]="conclusionTemplate">
+        {{conclusionTemplate}}
+      </mat-radio-button>
+    </mat-list-item>
+  </mat-list>
+
+</mat-radio-group>
+
+<div>Вы выбрали шаблон: {{conclusionTemplateSelected}}</div>

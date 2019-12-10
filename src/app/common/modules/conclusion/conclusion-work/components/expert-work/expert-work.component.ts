@@ -1,4 +1,6 @@
 import {ChangeDetectionStrategy, Component} from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
+import {DialogConclusionListComponent} from '../dialogs/dialog-conclusion-list/dialog-conclusion-list.component';
 
 @Component({
   selector:    'expert-work',
@@ -6,4 +8,16 @@ import {ChangeDetectionStrategy, Component} from '@angular/core';
 })
 export class ExpertWorkComponent {
   simplebarOptions = { autoHide: false, scrollbarMinSize: 100 };
+
+  constructor(public dialog: MatDialog) {}
+
+  openDialogConclusionList(): void {
+    const dialogRef = this.dialog.open(DialogConclusionListComponent, {
+
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
+  }
 }

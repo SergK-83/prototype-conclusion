@@ -12,6 +12,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatTreeModule } from '@angular/material/tree';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatRadioModule } from '@angular/material/radio';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTableModule } from '@angular/material/table';
 import { MatMenuModule } from '@angular/material/menu';
@@ -32,6 +33,7 @@ import { MatListModule } from '@angular/material/list';
     MatInputModule,
     MatTreeModule,
     MatCheckboxModule,
+    MatRadioModule,
     MatTooltipModule,
     MatTableModule,
     MatMenuModule,
